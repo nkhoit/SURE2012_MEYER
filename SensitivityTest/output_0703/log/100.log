@@ -1,0 +1,305 @@
+1 16 16 4096 1 1 0 0 0  : 1.2366
+12 32 16 4096 64 32 0 0 0  : 0.81286
+16 8 16 4096 32 32 0 0 0  : 0.94078
+20 32 16 4096 16 16 0 0 0  : 0.77229
+4 64 16 4096 64 32 0 0 0  : 0.77895
+8 16 16 4096 16 4 0 0 0  : 0.79919
+1 16 16 4096 32 32 0 14 0  : 0.9655
+1 32 16 4096 16 8 0 1 0  : 0.85477
+1 64 16 4096 16 16 0 13 0  : 0.85804
+1 64 16 4096 8 4 0 1 0  : 0.87824
+1 8 16 4096 64 32 0 8 0  : 1.1778
+12 16 16 4096 16 4 3 0 0  : 0.79894
+12 16 16 4096 32 32 2 1 0  : 0.83551
+12 16 16 4096 4 4 0 0 0  : 0.80215
+12 16 16 4096 64 32 3 13 0  : 0.89429
+12 16 16 4096 8 8 2 0 1  : 0.79773
+12 32 16 4096 16 8 1 0 0  : 0.77481
+12 32 16 4096 32 32 2 21 0  : 0.78116
+12 32 16 4096 4 4 2 3 0  : 0.7802
+12 32 16 4096 64 32 3 25 0  : 0.81286
+12 32 16 4096 8 8 3 5 0  : 0.77509
+12 64 16 4096 16 8 2 4 0  : 0.77016
+12 64 16 4096 32 32 2 5 0  : 0.77155
+12 64 16 4096 64 2 3 0 0  : 0.77524
+12 64 16 4096 64 32 3 9 0  : 0.77603
+12 8 16 4096 16 1 2 0 1  : 0.87378
+12 8 16 4096 2 1 0 0 1  : 0.86106
+12 8 16 4096 32 32 3 16 0  : 0.94278
+12 8 16 4096 64 32 0 18 0  : 0.99104
+12 8 16 4096 64 4 2 2 0  : 0.99956
+16 16 16 4096 16 16 0 4 0  : 0.8001
+16 16 16 4096 2 2 3 0 0  : 0.79633
+16 16 16 4096 32 32 3 28 0  : 0.83321
+16 16 16 4096 64 32 0 3 0  : 0.89281
+16 16 16 4096 64 8 0 6 0  : 0.89666
+16 32 16 4096 16 16 1 15 0  : 0.77295
+16 32 16 4096 32 32 0 0 1  : 0.77809
+16 32 16 4096 32 4 0 1 0  : 0.77418
+16 32 16 4096 64 32 1 12 0  : 0.81237
+16 32 16 4096 64 8 2 2 0  : 0.80963
+16 64 16 4096 16 16 2 11 0  : 0.7681
+16 64 16 4096 32 32 0 20 0  : 0.76937
+16 64 16 4096 32 4 3 1 0  : 0.76888
+16 64 16 4096 64 32 1 24 0  : 0.77434
+16 64 16 4096 64 8 3 7 0  : 0.7731
+16 8 16 4096 16 16 3 0 0  : 0.88128
+16 8 16 4096 32 32 0 4 0  : 0.94078
+16 8 16 4096 32 8 1 1 0  : 0.9418
+16 8 16 4096 64 32 1 8 0  : 0.98886
+16 8 16 4096 8 2 2 0 1  : 0.84324
+2 16 16 4096 32 32 0 6 0  : 0.88037
+2 32 16 4096 16 8 0 4 0  : 0.80571
+2 32 16 4096 8 8 0 1 0  : 0.82544
+2 64 16 4096 64 32 0 24 0  : 0.79058
+2 8 16 4096 32 4 0 3 0  : 0.98277
+20 16 16 4096 16 16 1 3 0  : 0.79943
+20 16 16 4096 16 8 4 3 0  : 0.79688
+20 16 16 4096 32 32 2 4 0  : 0.83293
+20 16 16 4096 32 8 4 2 0  : 0.83046
+20 16 16 4096 64 32 2 10 0  : 0.89273
+20 16 16 4096 64 8 1 4 0  : 0.89711
+20 32 16 4096 16 1 4 0 0  : 0.77465
+20 32 16 4096 16 8 1 1 0  : 0.77155
+20 32 16 4096 32 32 1 9 0  : 0.77794
+20 32 16 4096 32 8 1 0 0  : 0.7754
+20 32 16 4096 64 32 1 15 0  : 0.81252
+20 32 16 4096 64 4 1 3 0  : 0.80607
+20 32 16 4096 8 8 3 3 0  : 0.77023
+20 64 16 4096 16 4 1 0 0  : 0.76785
+20 64 16 4096 32 32 1 11 0  : 0.76904
+20 64 16 4096 32 4 0 3 0  : 0.76902
+20 64 16 4096 64 32 0 19 0  : 0.77451
+20 64 16 4096 64 32 4 2 0  : 0.77451
+20 64 16 4096 8 8 0 0 1  : 0.76647
+20 8 16 4096 16 16 4 14 0  : 0.88077
+20 8 16 4096 32 32 0 15 0  : 0.94041
+20 8 16 4096 32 32 4 16 0  : 0.94041
+20 8 16 4096 4 4 4 1 0  : 0.84076
+20 8 16 4096 64 32 3 24 0  : 0.98929
+20 8 16 4096 8 2 3 1 0  : 0.84313
+4 16 16 4096 16 4 0 3 0  : 0.80772
+4 16 16 4096 8 4 0 0 1  : 0.80973
+4 32 16 4096 4 4 0 2 0  : 0.80396
+4 64 16 4096 32 32 0 20 0  : 0.77672
+4 8 16 4096 16 16 0 8 0  : 0.90156
+4 8 16 4096 64 8 0 5 0  : 1.0034
+6 16 16 4096 64 2 0 0 1  : 0.90353
+6 32 16 4096 32 32 0 23 0  : 0.78939
+6 64 16 4096 16 2 0 0 1  : 0.78496
+6 64 16 4096 8 1 0 0 0  : 0.80565
+6 8 16 4096 64 32 0 13 0  : 0.99916
+8 16 16 4096 16 8 0 3 0  : 0.80096
+8 16 16 4096 4 4 1 1 0  : 0.80233
+8 16 16 4096 8 8 1 6 0  : 0.7982
+8 32 16 4096 32 32 1 20 0  : 0.78152
+8 32 16 4096 64 32 1 9 0  : 0.8127
+8 64 16 4096 2 1 0 0 0  : 0.78861
+8 64 16 4096 64 32 0 12 0  : 0.77591
+8 8 16 4096 16 16 0 12 0  : 0.88598
+8 8 16 4096 32 32 1 4 0  : 0.94265
+
+Current fitness: 0.0448274 ... No improvement for 0 generations.
+
+Current fitness: 0.0433947 ... No improvement for 0 generations.
+
+Current fitness: 0.0412065 ... No improvement for 0 generations.
+
+Current fitness: 0.0363666 ... No improvement for 0 generations.
+
+Current fitness: 0.0363666 ... No improvement for 1 generations.
+
+Current fitness: 0.0314769 ... No improvement for 0 generations.
+
+Current fitness: 0.0314769 ... No improvement for 1 generations.
+
+Current fitness: 0.0314702 ... No improvement for 0 generations.
+
+Current fitness: 0.0296922 ... No improvement for 0 generations.
+
+Current fitness: 0.0296342 ... No improvement for 0 generations.
+
+Current fitness: 0.0286505 ... No improvement for 0 generations.
+
+Current fitness: 0.0284326 ... No improvement for 0 generations.
+
+Current fitness: 0.0284152 ... No improvement for 0 generations.
+
+Current fitness: 0.0280134 ... No improvement for 0 generations.
+
+Current fitness: 0.0211204 ... No improvement for 0 generations.
+
+Current fitness: 0.0235777 ... No improvement for 1 generations.
+
+Current fitness: 0.0207768 ... No improvement for 0 generations.
+
+Current fitness: 0.0232072 ... No improvement for 1 generations.
+
+Current fitness: 0.0203744 ... No improvement for 0 generations.
+
+Current fitness: 0.0199796 ... No improvement for 0 generations.
+
+Current fitness: 0.0144124 ... No improvement for 0 generations.
+
+Current fitness: 0.0148211 ... No improvement for 1 generations.
+
+Current fitness: 0.0153923 ... No improvement for 2 generations.
+
+Current fitness: 0.0148759 ... No improvement for 3 generations.
+
+Current fitness: 0.0143345 ... No improvement for 0 generations.
+
+Current fitness: 0.0135619 ... No improvement for 0 generations.
+
+Current fitness: 0.00893951 ... No improvement for 0 generations.
+
+Current fitness: 0.00881856 ... No improvement for 0 generations.
+
+Current fitness: 0.00881947 ... No improvement for 1 generations.
+
+Current fitness: 0.00893704 ... No improvement for 2 generations.
+
+Current fitness: 0.00882108 ... No improvement for 3 generations.
+
+Current fitness: 0.00893812 ... No improvement for 4 generations.
+
+Current fitness: 0.00800906 ... No improvement for 0 generations.
+
+WARNING: Gradient regression for tuning optimization failed
+Offending Tree:   ( 0.773789 + ( 102.562 * ( ( ( ( 97.1126 * x4 ) + ( ( 94.3241 * x4 ) - ( ( -465.175 * x1 ) - ( 51.4665 * ( ( ( ( 38.0067 * x4 ) - ( 77.3042 * ( ( ( ( ( 85.4289 * x4 ) - ( ( 45.1644 * x1 ) - ( 78.3622 * ( ( ( 109.668 * x4 ) + ( ( 29.6096 * x4 ) - ( ( 100.727 * x1 ) - ( ( 3.5188 * x1 ) )^2 ) ) ) / x1 ) ) ) ) + ( ( 42.2595 * x4 ) - ( ( 58.3471 * x1 ) - ( 65.0931 * ( ( ( ( 8468.15 * x4 ) - ( 8468.15 * x4 ) ) / ( x4 / ( ( ( 13.0355 * x4 ) )^2 )^2 ) ) / x1 ) ) ) ) ) - ( 74.0228 * ( x4 / ( ( 32.5276 * x1 ) )^2 ) ) ) / ( x3 * ( ( 0.120095 * x1 ) )^2 ) ) ) ) / ( ( 0.00960898 * ( x4 * x0 ) ) )^2 ) / x1 ) ) ) ) ) - ( 9.56351 * ( x4 / ( ( ( 8.92618 * x4 ) + ( 94.3365 * x1 ) ) )^2 ) ) ) / ( x3 * ( ( 5.11471 * x1 ) )^2 ) ) ) )
+Current fitness: 0.0082775 ... No improvement for 1 generations.
+
+Current fitness: 0.00851106 ... No improvement for 2 generations.
+
+Current fitness: 0.00850929 ... No improvement for 3 generations.
+
+Current fitness: 0.00755874 ... No improvement for 0 generations.
+
+Current fitness: 0.00755801 ... No improvement for 1 generations.
+
+Current fitness: 0.00755853 ... No improvement for 2 generations.
+103
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+101
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+105
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+104
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.00755836 ... No improvement for 3 generations.
+
+Current fitness: 0.00754005 ... No improvement for 0 generations.
+
+Current fitness: 0.00715106 ... No improvement for 0 generations.
+
+Current fitness: 0.00710172 ... No improvement for 0 generations.
+
+Current fitness: 0.00661473 ... No improvement for 0 generations.
+
+Current fitness: 0.0065866 ... No improvement for 0 generations.
+111
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+117
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.00654702 ... No improvement for 0 generations.
+
+Current fitness: 0.00640033 ... No improvement for 0 generations.
+104
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.00653743 ... No improvement for 1 generations.
+
+Current fitness: 0.00571129 ... No improvement for 0 generations.
+
+Current fitness: 0.0060283 ... No improvement for 1 generations.
+
+Current fitness: 0.0058394 ... No improvement for 2 generations.
+
+Current fitness: 0.00541166 ... No improvement for 0 generations.
+
+Current fitness: 0.00541166 ... No improvement for 1 generations.
+
+Current fitness: 0.00507025 ... No improvement for 0 generations.
+
+Current fitness: 0.00514957 ... No improvement for 1 generations.
+
+Current fitness: 0.00514956 ... No improvement for 2 generations.
+
+Current fitness: 0.00514955 ... No improvement for 3 generations.
+
+Current fitness: 0.00519387 ... No improvement for 4 generations.
+
+Current fitness: 0.00479135 ... No improvement for 0 generations.
+
+Current fitness: 0.00478574 ... No improvement for 0 generations.
+
+Current fitness: 0.00478597 ... No improvement for 1 generations.
+
+Current fitness: 0.00478589 ... No improvement for 2 generations.
+
+Current fitness: 0.00478579 ... No improvement for 3 generations.
+
+Current fitness: 0.00467512 ... No improvement for 0 generations.
+
+Current fitness: 0.00478582 ... No improvement for 1 generations.
+
+Current fitness: 0.00472501 ... No improvement for 2 generations.
+
+Current fitness: 0.0046871 ... No improvement for 3 generations.
+104
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+101
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.00468466 ... No improvement for 4 generations.
+
+Current fitness: 0.00468466 ... No improvement for 5 generations.
+
+Current fitness: 0.00451171 ... No improvement for 0 generations.
+
+Current fitness: 0.00451202 ... No improvement for 1 generations.
+
+Current fitness: 0.00451203 ... No improvement for 2 generations.
+
+Current fitness: 0.00451168 ... No improvement for 3 generations.
+
+Current fitness: 0.00451203 ... No improvement for 4 generations.
+
+Current fitness: 0.00442253 ... No improvement for 0 generations.
+
+Current fitness: 0.00442093 ... No improvement for 0 generations.
+
+Current fitness: 0.00451098 ... No improvement for 1 generations.
+
+Current fitness: 0.00451203 ... No improvement for 2 generations.
+
+Current fitness: 0.00451203 ... No improvement for 3 generations.
+
+Current fitness: 0.00445533 ... No improvement for 4 generations.
+
+Current fitness: 0.00445532 ... No improvement for 5 generations.
+
+Current fitness: 0.00445573 ... No improvement for 6 generations.
+
+Current fitness: 0.00445572 ... No improvement for 7 generations.
+
+Current fitness: 0.00445573 ... No improvement for 8 generations.
+
+Current fitness: 0.00444604 ... No improvement for 9 generations.
+
+Current fitness: 0.00446366 ... No improvement for 10 generations.
+
+Current fitness: 0.00450535 ... No improvement for 11 generations.
+
+Converged after 87 generations.

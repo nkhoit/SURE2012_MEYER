@@ -1,0 +1,21 @@
+make: Entering directory `/data/ktran12/GPRSkit-0.2/gprscreate'
+Removing all generated files
+make: Leaving directory `/data/ktran12/GPRSkit-0.2/gprscreate'
+make: Entering directory `/data/ktran12/GPRSkit-0.2/gprscreate'
+Building src/ExpTree.o
+Building src/GeneticAlg.o
+./include/GeneticProg.h:87: error: ‘dat’ was not declared in this scope
+./include/GeneticProg.h:91: error: ‘dat’ was not declared in this scope
+src/GeneticAlg.cc: In member function ‘long double GeneticAlg::evalExpTree(Node*, Individual*, int)’:
+src/GeneticAlg.cc:121: error: ‘class GeneticProg’ has no member named ‘m_varConTabs’
+src/GeneticAlg.cc: In member function ‘void GeneticAlg::Run(int)’:
+src/GeneticAlg.cc:196: error: ‘dat’ was not declared in this scope
+src/GeneticAlg.cc: In member function ‘double GeneticAlg::fitFunc(Individual*, int, int)’:
+src/GeneticAlg.cc:274: error: ‘class GeneticProg’ has no member named ‘m_simResultsTable’
+make: *** [src/GeneticAlg.o] Error 1
+make: Leaving directory `/data/ktran12/GPRSkit-0.2/gprscreate'
+/bin/sh: /data/ktran12/GPRSkit-0.2/gprscreate/gprscreate: No such file or directory
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.001s
