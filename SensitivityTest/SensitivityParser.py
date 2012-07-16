@@ -1,3 +1,4 @@
+#!/data/bin/python
 import sys
 sys.path.append('/data/ktran12/lib/sympy-0.7.0/')
 import sympy

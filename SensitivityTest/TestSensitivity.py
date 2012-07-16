@@ -1,3 +1,5 @@
+#!/data/bin/python
+
 import subprocess
 import os
 import fileinput
@@ -13,7 +15,7 @@ def change_header(file,number):
   fileinput.close()
   print 'Changed GP Header for ' + number + ' data points'
 
-for filename in os.listdir('/data/ktran12/SURE2012_Meyer/sensitivity_test/data'):
+for filename in os.listdir('./data'):
   dataList.append(filename)
 
 print 'There are ' + str(len(dataList)) + ' data files.'
@@ -24,7 +26,7 @@ print ''
 
 for file in dataList: 
   fileString=file.split('.')
-  fout=open('/data/ktran12/SURE2012_Meyer/sensitivity_test/output/log/'+fileString[0]+'.log', 'w')
+  fout=open('./output/log/'+fileString[0]+'.log', 'w')
   change_header('/data/ktran12/GPRSkit-0.2/gprscreate/include/GPparams.h', fileString[0])
 
   print 'make clean'
@@ -32,7 +34,7 @@ for file in dataList:
   print 'make'
   subprocess.call('make -C /data/ktran12/GPRSkit-0.2/gprscreate', shell=True)
 
-  gprsCommand='time /data/ktran12/GPRSkit-0.2/gprscreate/gprscreate /data/ktran12/SURE2012_Meyer/sensitivity_test/data/'+file+' /data/ktran12/SURE2012_Meyer/sensitivity_test/output/'+fileString[0]+'Out.'+fileString[1]
+  gprsCommand='time /data/ktran12/GPRSkit-0.2/gprscreate/gprscreate ./data/'+file+' ./output/'+fileString[0]+'Out.'+fileString[1]
   print gprsCommand
   p = subprocess.call(gprsCommand, shell=True, stdout=fout)
 
