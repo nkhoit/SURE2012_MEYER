@@ -1,0 +1,522 @@
+1 16 16 4096 1 1 0 0 0  : 1.2366
+1 32 16 4096 8 2 0 0 0  : 0.90452
+1 8 16 4096 64 4 0 0 0  : 1.1699
+12 32 16 4096 4 4 0 0 0  : 0.7802
+12 8 16 4096 32 8 0 0 0  : 0.94295
+16 32 16 4096 32 2 0 0 0  : 0.77459
+16 8 16 4096 16 8 0 0 0  : 0.87842
+2 32 16 4096 16 16 0 0 0  : 0.81196
+2 64 16 4096 8 8 0 0 0  : 0.81965
+20 16 16 4096 8 1 0 0 0  : 0.79583
+20 64 16 4096 64 32 0 0 0  : 0.77451
+4 16 16 4096 4 1 0 0 0  : 0.83604
+4 64 16 4096 32 2 0 0 0  : 0.7824
+6 16 16 4096 16 4 0 0 0  : 0.80801
+6 64 16 4096 16 1 0 0 0  : 0.80389
+6 8 16 4096 8 4 0 0 0  : 0.86455
+8 32 16 4096 4 4 0 0 0  : 0.78046
+8 8 16 4096 32 8 0 0 0  : 0.943
+1 16 16 4096 16 8 0 7 0  : 0.89687
+1 16 16 4096 32 8 0 1 0  : 0.91542
+1 16 16 4096 64 32 0 5 0  : 1.0342
+1 32 16 4096 16 16 0 3 0  : 0.86703
+1 32 16 4096 32 32 0 24 0  : 0.85719
+1 32 16 4096 64 32 0 15 0  : 0.89273
+1 32 16 4096 8 4 0 3 0  : 0.88391
+1 64 16 4096 2 2 0 1 0  : 1.05
+1 64 16 4096 32 8 0 4 0  : 0.81584
+1 64 16 4096 64 32 0 8 0  : 0.82154
+1 8 16 4096 16 16 0 6 0  : 1.0699
+1 8 16 4096 32 32 0 27 0  : 1.139
+1 8 16 4096 64 32 0 18 0  : 1.1778
+1 8 16 4096 8 8 0 2 0  : 1.0106
+12 16 16 4096 16 16 1 2 0  : 0.80557
+12 16 16 4096 16 2 0 1 0  : 0.80079
+12 16 16 4096 16 8 2 0 0  : 0.80051
+12 16 16 4096 32 32 0 0 0  : 0.83551
+12 16 16 4096 32 32 1 18 0  : 0.83551
+12 16 16 4096 32 32 2 27 0  : 0.83551
+12 16 16 4096 32 32 3 9 0  : 0.83551
+12 16 16 4096 32 8 2 6 0  : 0.83096
+12 16 16 4096 4 4 3 3 0  : 0.80215
+12 16 16 4096 64 32 0 9 0  : 0.89429
+12 16 16 4096 64 32 2 17 0  : 0.89429
+12 16 16 4096 64 32 3 27 0  : 0.89429
+12 16 16 4096 64 8 1 4 0  : 0.89741
+12 16 16 4096 8 4 1 1 0  : 0.79656
+12 16 16 4096 8 8 3 5 0  : 0.79773
+12 32 16 4096 16 16 1 5 0  : 0.77672
+12 32 16 4096 16 2 2 0 0  : 0.77761
+12 32 16 4096 16 8 2 2 0  : 0.77481
+12 32 16 4096 32 32 0 10 0  : 0.78116
+12 32 16 4096 32 32 1 20 0  : 0.78116
+12 32 16 4096 32 32 2 3 0  : 0.78116
+12 32 16 4096 32 4 0 1 0  : 0.7762
+12 32 16 4096 32 8 3 1 0  : 0.77663
+12 32 16 4096 64 2 0 1 0  : 0.80341
+12 32 16 4096 64 32 1 10 0  : 0.81286
+12 32 16 4096 64 32 2 2 0  : 0.81286
+12 32 16 4096 64 32 3 3 0  : 0.81286
+12 32 16 4096 64 8 1 7 0  : 0.81029
+12 32 16 4096 8 4 2 0 0  : 0.77437
+12 64 16 4096 1 1 0 0 0  : 0.8073
+12 64 16 4096 16 16 1 8 0  : 0.77188
+12 64 16 4096 16 2 3 0 0  : 0.77388
+12 64 16 4096 16 8 2 5 0  : 0.77016
+12 64 16 4096 32 32 0 13 0  : 0.77155
+12 64 16 4096 32 32 1 23 0  : 0.77155
+12 64 16 4096 32 32 2 4 0  : 0.77155
+12 64 16 4096 32 4 1 0 0  : 0.7706
+12 64 16 4096 32 8 3 4 0  : 0.76983
+12 64 16 4096 64 2 2 0 0  : 0.77524
+12 64 16 4096 64 32 1 13 0  : 0.77603
+12 64 16 4096 64 32 2 22 0  : 0.77603
+12 64 16 4096 64 32 3 4 0  : 0.77603
+12 64 16 4096 64 8 2 1 0  : 0.77321
+12 64 16 4096 8 4 2 2 0  : 0.77073
+12 8 16 4096 1 1 2 0 0  : 0.87829
+12 8 16 4096 16 16 2 0 1  : 0.88498
+12 8 16 4096 16 4 0 0 1  : 0.87713
+12 8 16 4096 16 8 3 0 0  : 0.88052
+12 8 16 4096 32 32 0 16 0  : 0.94278
+12 8 16 4096 32 32 1 26 0  : 0.94278
+12 8 16 4096 32 32 2 7 0  : 0.94278
+12 8 16 4096 32 4 1 3 0  : 0.94407
+12 8 16 4096 32 8 3 7 0  : 0.94295
+12 8 16 4096 64 2 3 0 0  : 0.99732
+12 8 16 4096 64 32 1 16 0  : 0.99104
+12 8 16 4096 64 32 2 25 0  : 0.99104
+12 8 16 4096 64 32 3 7 0  : 0.99104
+12 8 16 4096 64 8 2 4 0  : 0.99716
+12 8 16 4096 8 4 3 1 0  : 0.84846
+16 16 16 4096 16 1 0 0 0  : 0.79715
+16 16 16 4096 16 16 2 11 0  : 0.8001
+16 16 16 4096 16 4 0 3 0  : 0.79544
+16 16 16 4096 16 8 3 3 0  : 0.79714
+16 16 16 4096 32 32 0 19 0  : 0.83321
+16 16 16 4096 32 32 1 29 0  : 0.83321
+16 16 16 4096 32 32 3 0 0  : 0.83321
+16 16 16 4096 32 4 2 1 0  : 0.82674
+16 16 16 4096 4 1 1 0 0  : 0.79625
+16 16 16 4096 64 32 0 0 1  : 0.89281
+16 16 16 4096 64 32 1 19 0  : 0.89281
+16 16 16 4096 64 32 2 28 0  : 0.89281
+16 16 16 4096 64 4 0 0 0  : 0.89702
+16 16 16 4096 64 8 2 7 0  : 0.89666
+16 16 16 4096 8 8 0 0 0  : 0.79286
+16 32 16 4096 16 1 2 0 0  : 0.7748
+16 32 16 4096 16 16 2 14 0  : 0.77295
+16 32 16 4096 16 4 1 2 0  : 0.77149
+16 32 16 4096 16 8 3 6 0  : 0.77189
+16 32 16 4096 32 32 0 21 0  : 0.77809
+16 32 16 4096 32 32 1 31 0  : 0.77809
+16 32 16 4096 32 32 3 11 0  : 0.77809
+16 32 16 4096 32 4 3 0 0  : 0.77418
+16 32 16 4096 4 1 3 0 0  : 0.7746
+16 32 16 4096 64 32 0 11 0  : 0.81237
+16 32 16 4096 64 32 1 21 0  : 0.81237
+16 32 16 4096 64 32 2 30 0  : 0.81237
+16 32 16 4096 64 4 0 2 0  : 0.80521
+16 32 16 4096 64 8 3 2 0  : 0.80963
+16 32 16 4096 8 8 0 2 0  : 0.77053
+16 64 16 4096 16 16 0 0 0  : 0.7681
+16 64 16 4096 16 16 2 3 0  : 0.7681
+16 64 16 4096 16 4 2 0 1  : 0.76779
+16 64 16 4096 2 1 0 0 1  : 0.77274
+16 64 16 4096 32 32 0 24 0  : 0.76937
+16 64 16 4096 32 32 1 6 0  : 0.76937
+16 64 16 4096 32 32 3 14 0  : 0.76937
+16 64 16 4096 32 4 3 3 0  : 0.76888
+16 64 16 4096 4 2 0 1 0  : 0.76855
+16 64 16 4096 64 32 0 14 0  : 0.77434
+16 64 16 4096 64 32 1 24 0  : 0.77434
+16 64 16 4096 64 32 2 5 0  : 0.77434
+16 64 16 4096 64 4 1 1 0  : 0.77272
+16 64 16 4096 64 8 3 5 0  : 0.7731
+16 64 16 4096 8 8 0 5 0  : 0.76668
+16 8 16 4096 16 16 0 10 0  : 0.88128
+16 8 16 4096 16 16 2 6 0  : 0.88128
+16 8 16 4096 16 4 2 3 0  : 0.87498
+16 8 16 4096 2 1 2 0 1  : 0.84523
+16 8 16 4096 32 32 0 27 0  : 0.94078
+16 8 16 4096 32 32 1 9 0  : 0.94078
+16 8 16 4096 32 32 3 17 0  : 0.94078
+16 8 16 4096 32 8 0 1 0  : 0.9418
+16 8 16 4096 4 2 2 0 0  : 0.84125
+16 8 16 4096 64 32 0 17 0  : 0.98886
+16 8 16 4096 64 32 1 27 0  : 0.98886
+16 8 16 4096 64 32 2 8 0  : 0.98886
+16 8 16 4096 64 4 2 0 0  : 0.99784
+16 8 16 4096 8 1 0 0 0  : 0.84552
+16 8 16 4096 8 8 1 0 0  : 0.8459
+2 16 16 4096 16 16 0 7 0  : 0.85184
+2 16 16 4096 32 32 0 21 0  : 0.88037
+2 16 16 4096 64 2 0 0 1  : 0.93085
+2 16 16 4096 64 8 0 2 0  : 0.93097
+2 32 16 4096 16 16 0 7 0  : 0.81196
+2 32 16 4096 32 32 0 21 0  : 0.81173
+2 32 16 4096 64 2 0 0 1  : 0.83037
+2 32 16 4096 64 8 0 2 0  : 0.8288
+2 64 16 4096 16 16 0 7 0  : 0.8055
+2 64 16 4096 32 32 0 21 0  : 0.79285
+2 64 16 4096 64 2 0 0 1  : 0.80708
+2 64 16 4096 64 8 0 2 0  : 0.78614
+2 8 16 4096 16 16 0 7 0  : 0.95633
+2 8 16 4096 32 32 0 21 0  : 1.0024
+2 8 16 4096 64 2 0 0 1  : 1.0379
+2 8 16 4096 64 8 0 2 0  : 1.0429
+20 16 16 4096 16 16 0 1 0  : 0.79943
+20 16 16 4096 16 16 2 5 0  : 0.79943
+20 16 16 4096 16 2 2 0 0  : 0.79551
+20 16 16 4096 16 8 1 3 0  : 0.79688
+20 16 16 4096 2 2 1 1 0  : 0.79604
+20 16 16 4096 32 32 0 27 0  : 0.83293
+20 16 16 4096 32 32 1 9 0  : 0.83293
+20 16 16 4096 32 32 3 17 0  : 0.83293
+20 16 16 4096 32 32 4 26 0  : 0.83293
+20 16 16 4096 32 8 0 6 0  : 0.83046
+20 16 16 4096 4 1 4 0 1  : 0.79606
+20 16 16 4096 64 2 2 0 1  : 0.89603
+20 16 16 4096 64 32 1 11 0  : 0.89273
+20 16 16 4096 64 32 2 20 0  : 0.89273
+20 16 16 4096 64 32 3 30 0  : 0.89273
+20 16 16 4096 64 4 0 1 0  : 0.89767
+20 16 16 4096 64 8 2 4 0  : 0.89711
+20 16 16 4096 8 4 0 0 1  : 0.79219
+20 16 16 4096 8 8 2 3 0  : 0.79273
+20 32 16 4096 16 16 0 12 0  : 0.77229
+20 32 16 4096 16 16 2 8 0  : 0.77229
+20 32 16 4096 16 2 3 0 0  : 0.77229
+20 32 16 4096 16 8 1 6 0  : 0.77155
+20 32 16 4096 2 2 2 1 0  : 0.77455
+20 32 16 4096 32 32 0 3 0  : 0.77794
+20 32 16 4096 32 32 2 1 0  : 0.77794
+20 32 16 4096 32 32 3 2 0  : 0.77794
+20 32 16 4096 32 32 4 29 0  : 0.77794
+20 32 16 4096 32 8 1 1 0  : 0.7754
+20 32 16 4096 4 2 0 1 0  : 0.7714
+20 32 16 4096 64 2 3 1 0  : 0.80193
+20 32 16 4096 64 32 1 14 0  : 0.81252
+20 32 16 4096 64 32 2 23 0  : 0.81252
+20 32 16 4096 64 32 3 5 0  : 0.81252
+20 32 16 4096 64 4 1 0 0  : 0.80607
+20 32 16 4096 64 8 2 7 0  : 0.81019
+20 32 16 4096 8 4 0 3 0  : 0.77021
+20 32 16 4096 8 8 2 6 0  : 0.77023
+20 64 16 4096 16 16 0 15 0  : 0.76755
+20 64 16 4096 16 16 3 1 0  : 0.76755
+20 64 16 4096 16 2 4 0 1  : 0.76888
+20 64 16 4096 16 8 2 0 1  : 0.76729
+20 64 16 4096 2 2 4 0 0  : 0.77161
+20 64 16 4096 32 32 0 4 0  : 0.76904
+20 64 16 4096 32 32 2 12 0  : 0.76904
+20 64 16 4096 32 32 3 22 0  : 0.76904
+20 64 16 4096 32 32 4 31 0  : 0.76904
+20 64 16 4096 32 8 1 4 0  : 0.76884
+20 64 16 4096 4 2 2 0 0  : 0.76849
+20 64 16 4096 64 2 4 1 0  : 0.77402
+20 64 16 4096 64 32 1 17 0  : 0.77451
+20 64 16 4096 64 32 2 26 0  : 0.77451
+20 64 16 4096 64 32 3 8 0  : 0.77451
+20 64 16 4096 64 4 1 3 0  : 0.77346
+20 64 16 4096 64 8 3 2 0  : 0.77366
+20 64 16 4096 8 4 1 2 0  : 0.76666
+20 64 16 4096 8 8 3 1 0  : 0.76647
+20 8 16 4096 16 16 0 4 0  : 0.88077
+20 8 16 4096 16 16 3 12 0  : 0.88077
+20 8 16 4096 16 4 0 0 1  : 0.87493
+20 8 16 4096 16 8 2 3 0  : 0.87817
+20 8 16 4096 32 2 0 0 0  : 0.94223
+20 8 16 4096 32 32 0 7 0  : 0.94041
+20 8 16 4096 32 32 2 15 0  : 0.94041
+20 8 16 4096 32 32 3 25 0  : 0.94041
+20 8 16 4096 32 32 4 6 0  : 0.94041
+20 8 16 4096 32 8 1 7 0  : 0.94158
+20 8 16 4096 4 2 3 0 0  : 0.84115
+20 8 16 4096 64 32 0 1 0  : 0.98929
+20 8 16 4096 64 32 1 2 0  : 0.98929
+20 8 16 4096 64 32 2 29 0  : 0.98929
+20 8 16 4096 64 32 4 0 1  : 0.98929
+20 8 16 4096 64 4 2 1 0  : 0.9986
+20 8 16 4096 64 8 3 5 0  : 0.99669
+20 8 16 4096 8 4 2 0 1  : 0.84284
+20 8 16 4096 8 8 3 4 0  : 0.84542
+3 32 16 4096 32 32 0 7 0  : 0.81101
+4 16 16 4096 2 2 0 0 0  : 0.85016
+4 16 16 4096 32 4 0 3 0  : 0.83405
+4 16 16 4096 64 32 0 26 0  : 0.90042
+4 16 16 4096 8 8 0 5 0  : 0.81372
+4 32 16 4096 2 2 0 0 0  : 0.82822
+4 32 16 4096 32 32 0 26 0  : 0.78879
+4 32 16 4096 64 32 0 10 0  : 0.81708
+4 32 16 4096 64 8 0 7 0  : 0.81405
+4 64 16 4096 16 2 0 1 0  : 0.78504
+4 64 16 4096 32 32 0 26 0  : 0.77672
+4 64 16 4096 64 32 0 10 0  : 0.77895
+4 64 16 4096 64 8 0 7 0  : 0.77623
+4 8 16 4096 16 2 0 1 0  : 0.8838
+4 8 16 4096 32 32 0 26 0  : 0.95153
+4 8 16 4096 64 32 0 10 0  : 0.99999
+4 8 16 4096 64 8 0 7 0  : 1.0034
+6 16 16 4096 16 16 0 7 0  : 0.81871
+6 16 16 4096 32 32 0 21 0  : 0.84427
+6 16 16 4096 64 2 0 0 1  : 0.90353
+6 16 16 4096 64 8 0 2 0  : 0.90226
+6 32 16 4096 16 16 0 7 0  : 0.78599
+6 32 16 4096 32 32 0 21 0  : 0.78939
+6 32 16 4096 64 2 0 0 1  : 0.8089
+6 32 16 4096 64 8 0 2 0  : 0.81349
+6 64 16 4096 16 16 0 7 0  : 0.7808
+6 64 16 4096 32 32 0 21 0  : 0.77674
+6 64 16 4096 64 2 0 0 1  : 0.78336
+6 64 16 4096 64 8 0 2 0  : 0.77635
+6 8 16 4096 16 16 0 7 0  : 0.90137
+6 8 16 4096 32 32 0 21 0  : 0.95085
+6 8 16 4096 64 2 0 0 1  : 1.0044
+6 8 16 4096 64 8 0 2 0  : 1.0039
+8 16 16 4096 16 1 0 0 1  : 0.80667
+8 16 16 4096 16 4 0 2 0  : 0.79919
+8 16 16 4096 32 32 0 14 0  : 0.83608
+8 16 16 4096 32 32 1 24 0  : 0.83608
+8 16 16 4096 4 1 1 0 0  : 0.80746
+8 16 16 4096 64 32 0 29 0  : 0.89406
+8 16 16 4096 64 4 0 0 1  : 0.89746
+8 16 16 4096 8 8 0 0 1  : 0.7982
+8 32 16 4096 16 16 1 12 0  : 0.77696
+8 32 16 4096 2 1 0 0 0  : 0.79187
+8 32 16 4096 32 32 0 7 0  : 0.78152
+8 32 16 4096 32 4 1 3 0  : 0.77613
+8 32 16 4096 64 32 0 10 0  : 0.8127
+8 32 16 4096 64 32 1 20 0  : 0.8127
+8 32 16 4096 64 8 1 6 0  : 0.80976
+8 64 16 4096 16 16 0 0 1  : 0.77217
+8 64 16 4096 16 4 1 1 0  : 0.77106
+8 64 16 4096 32 32 0 17 0  : 0.7718
+8 64 16 4096 32 32 1 27 0  : 0.7718
+8 64 16 4096 4 2 0 1 0  : 0.77646
+8 64 16 4096 64 32 0 31 0  : 0.77591
+8 64 16 4096 64 4 0 3 0  : 0.77252
+8 64 16 4096 8 8 0 3 0  : 0.77148
+8 8 16 4096 16 16 1 15 0  : 0.88598
+
+Current fitness: 0.0496483 ... No improvement for 0 generations.
+
+Current fitness: 0.04378 ... No improvement for 0 generations.
+
+Current fitness: 0.0422738 ... No improvement for 0 generations.
+
+Current fitness: 0.0319356 ... No improvement for 0 generations.
+
+Current fitness: 0.0319356 ... No improvement for 1 generations.
+
+Current fitness: 0.0271819 ... No improvement for 0 generations.
+
+Current fitness: 0.0258073 ... No improvement for 0 generations.
+
+Current fitness: 0.0246001 ... No improvement for 0 generations.
+
+Current fitness: 0.023261 ... No improvement for 0 generations.
+
+Current fitness: 0.023261 ... No improvement for 1 generations.
+
+Current fitness: 0.0220295 ... No improvement for 0 generations.
+
+Current fitness: 0.0220197 ... No improvement for 0 generations.
+
+Current fitness: 0.0182637 ... No improvement for 0 generations.
+
+Current fitness: 0.0180348 ... No improvement for 0 generations.
+
+Current fitness: 0.0153118 ... No improvement for 0 generations.
+
+Current fitness: 0.0132539 ... No improvement for 0 generations.
+
+Current fitness: 0.0147139 ... No improvement for 1 generations.
+
+Current fitness: 0.0128896 ... No improvement for 0 generations.
+
+Current fitness: 0.0120174 ... No improvement for 0 generations.
+
+Current fitness: 0.0109525 ... No improvement for 0 generations.
+
+Current fitness: 0.00970195 ... No improvement for 0 generations.
+
+Current fitness: 0.00970619 ... No improvement for 1 generations.
+
+Current fitness: 0.00879762 ... No improvement for 0 generations.
+
+Current fitness: 0.00973741 ... No improvement for 1 generations.
+
+Current fitness: 0.00929281 ... No improvement for 2 generations.
+
+Current fitness: 0.00840773 ... No improvement for 0 generations.
+
+Current fitness: 0.0091641 ... No improvement for 1 generations.
+
+Current fitness: 0.00804897 ... No improvement for 0 generations.
+
+Current fitness: 0.00804419 ... No improvement for 0 generations.
+
+Current fitness: 0.00804897 ... No improvement for 1 generations.
+
+Current fitness: 0.00809933 ... No improvement for 2 generations.
+
+Current fitness: 0.00844246 ... No improvement for 3 generations.
+
+Current fitness: 0.00808952 ... No improvement for 4 generations.
+
+Current fitness: 0.00818361 ... No improvement for 5 generations.
+
+Current fitness: 0.00770038 ... No improvement for 0 generations.
+
+Current fitness: 0.00754249 ... No improvement for 0 generations.
+
+Current fitness: 0.00746102 ... No improvement for 0 generations.
+
+Current fitness: 0.00745268 ... No improvement for 0 generations.
+
+Current fitness: 0.00742907 ... No improvement for 0 generations.
+
+Current fitness: 0.00745283 ... No improvement for 1 generations.
+
+Current fitness: 0.00756159 ... No improvement for 2 generations.
+
+Current fitness: 0.0075853 ... No improvement for 3 generations.
+
+Current fitness: 0.00756158 ... No improvement for 4 generations.
+
+Current fitness: 0.00744366 ... No improvement for 5 generations.
+
+Current fitness: 0.00741758 ... No improvement for 0 generations.
+
+Current fitness: 0.00711192 ... No improvement for 0 generations.
+
+Current fitness: 0.0071117 ... No improvement for 1 generations.
+
+Current fitness: 0.00711176 ... No improvement for 2 generations.
+
+Current fitness: 0.00671085 ... No improvement for 0 generations.
+
+Current fitness: 0.00677197 ... No improvement for 1 generations.
+
+Current fitness: 0.00670503 ... No improvement for 0 generations.
+
+Current fitness: 0.00670586 ... No improvement for 1 generations.
+
+Current fitness: 0.00670605 ... No improvement for 2 generations.
+
+Current fitness: 0.00677314 ... No improvement for 3 generations.
+
+Current fitness: 0.00646327 ... No improvement for 0 generations.
+
+Current fitness: 0.00646326 ... No improvement for 1 generations.
+
+Current fitness: 0.00646927 ... No improvement for 2 generations.
+
+Current fitness: 0.00662927 ... No improvement for 3 generations.
+
+Current fitness: 0.0065744 ... No improvement for 4 generations.
+
+Current fitness: 0.0063846 ... No improvement for 0 generations.
+
+Current fitness: 0.00630662 ... No improvement for 0 generations.
+
+Current fitness: 0.00630662 ... No improvement for 1 generations.
+
+Current fitness: 0.00621951 ... No improvement for 0 generations.
+
+Current fitness: 0.00622226 ... No improvement for 1 generations.
+
+Current fitness: 0.00605217 ... No improvement for 0 generations.
+
+Current fitness: 0.00605217 ... No improvement for 1 generations.
+
+Current fitness: 0.00605218 ... No improvement for 2 generations.
+
+Current fitness: 0.0060554 ... No improvement for 3 generations.
+
+Current fitness: 0.00605217 ... No improvement for 4 generations.
+
+Current fitness: 0.00608936 ... No improvement for 5 generations.
+
+Current fitness: 0.00615581 ... No improvement for 6 generations.
+
+Current fitness: 0.00614585 ... No improvement for 7 generations.
+
+Current fitness: 0.0061558 ... No improvement for 8 generations.
+
+Current fitness: 0.00594184 ... No improvement for 0 generations.
+
+Current fitness: 0.00594177 ... No improvement for 1 generations.
+
+Current fitness: 0.00578135 ... No improvement for 0 generations.
+
+Current fitness: 0.00594176 ... No improvement for 1 generations.
+
+Current fitness: 0.00589933 ... No improvement for 2 generations.
+
+Current fitness: 0.00607881 ... No improvement for 3 generations.
+
+Current fitness: 0.0060788 ... No improvement for 4 generations.
+
+Current fitness: 0.00608301 ... No improvement for 5 generations.
+
+Current fitness: 0.00587725 ... No improvement for 6 generations.
+
+Current fitness: 0.00581654 ... No improvement for 7 generations.
+
+Current fitness: 0.00582297 ... No improvement for 8 generations.
+
+Current fitness: 0.00582296 ... No improvement for 9 generations.
+
+Current fitness: 0.00574558 ... No improvement for 0 generations.
+
+Current fitness: 0.00587303 ... No improvement for 1 generations.
+
+Current fitness: 0.00575196 ... No improvement for 2 generations.
+
+Current fitness: 0.00587302 ... No improvement for 3 generations.
+
+Current fitness: 0.00575196 ... No improvement for 4 generations.
+
+Current fitness: 0.00572826 ... No improvement for 0 generations.
+
+Current fitness: 0.00586754 ... No improvement for 1 generations.
+
+Current fitness: 0.00586753 ... No improvement for 2 generations.
+
+Current fitness: 0.00578355 ... No improvement for 3 generations.
+
+Current fitness: 0.00578356 ... No improvement for 4 generations.
+
+Current fitness: 0.00577262 ... No improvement for 5 generations.
+
+Current fitness: 0.00577206 ... No improvement for 6 generations.
+
+Current fitness: 0.00575341 ... No improvement for 7 generations.
+
+Current fitness: 0.00556675 ... No improvement for 0 generations.
+
+Current fitness: 0.00556683 ... No improvement for 1 generations.
+
+Current fitness: 0.00556675 ... No improvement for 2 generations.
+
+Current fitness: 0.00571675 ... No improvement for 3 generations.
+
+Current fitness: 0.00569254 ... No improvement for 4 generations.
+
+Current fitness: 0.00581312 ... No improvement for 5 generations.
+
+Current fitness: 0.00581312 ... No improvement for 6 generations.
+
+Current fitness: 0.00581312 ... No improvement for 7 generations.
+
+Current fitness: 0.0057469 ... No improvement for 8 generations.
+
+Current fitness: 0.0057469 ... No improvement for 9 generations.
+
+Current fitness: 0.00563212 ... No improvement for 10 generations.
+
+Current fitness: 0.00565572 ... No improvement for 11 generations.
+
+Converged after 110 generations.
