@@ -598,137 +598,248 @@
 8 64 16 4096 16 16 1 2 0  : 0.77217
 8 64 16 4096 16 4 1 3 0  : 0.77106
 8 64 16 4096 2 2 0 0 0  : 0.78876
+8 64 16 4096 32 32 0 18 0  : 0.7718
+8 64 16 4096 32 32 0 9 0  : 0.7718
+8 64 16 4096 32 32 1 27 0  : 0.7718
+8 64 16 4096 32 8 0 0 0  : 0.76964
+8 64 16 4096 4 2 0 0 1  : 0.77646
+8 64 16 4096 64 32 0 10 0  : 0.77591
+8 64 16 4096 64 32 0 3 0  : 0.77591
+8 64 16 4096 64 32 1 2 0  : 0.77591
+8 64 16 4096 64 4 0 0 1  : 0.77252
+8 64 16 4096 64 8 1 4 0  : 0.77279
+8 64 16 4096 8 8 0 0 0  : 0.77148
+8 8 16 4096 16 1 0 0 1  : 0.87389
+8 8 16 4096 16 16 1 10 0  : 0.88598
+8 8 16 4096 16 4 0 1 0  : 0.87739
+8 8 16 4096 16 8 1 5 0  : 0.88132
+8 8 16 4096 32 32 0 12 0  : 0.94265
+8 8 16 4096 32 32 0 31 0  : 0.94265
+8 8 16 4096 32 32 1 21 0  : 0.94265
+8 8 16 4096 32 4 0 2 0  : 0.944
+8 8 16 4096 32 8 1 6 0  : 0.943
+8 8 16 4096 64 2 0 1 0  : 0.99624
+8 8 16 4096 64 32 0 24 0  : 0.99084
+8 8 16 4096 64 32 1 14 0  : 0.99084
+8 8 16 4096 64 32 1 5 0  : 0.99084
+8 8 16 4096 64 8 0 6 0  : 0.99629
 
-Current fitness: 0.0383089 ... No improvement for 0 generations.
+Current fitness: 0.0383037 ... No improvement for 0 generations.
 
-Current fitness: 0.0378036 ... No improvement for 0 generations.
+Current fitness: 0.0247045 ... No improvement for 0 generations.
 
-Current fitness: 0.0373749 ... No improvement for 0 generations.
+Current fitness: 0.0247045 ... No improvement for 1 generations.
 
-Current fitness: 0.0339726 ... No improvement for 0 generations.
+Current fitness: 0.0247045 ... No improvement for 2 generations.
 
-Current fitness: 0.0339726 ... No improvement for 1 generations.
+Current fitness: 0.0233162 ... No improvement for 0 generations.
 
-Current fitness: 0.0253109 ... No improvement for 0 generations.
+Current fitness: 0.0223075 ... No improvement for 0 generations.
 
-Current fitness: 0.0223709 ... No improvement for 0 generations.
+Current fitness: 0.0222625 ... No improvement for 0 generations.
 
-Current fitness: 0.022371 ... No improvement for 1 generations.
+Current fitness: 0.02203 ... No improvement for 0 generations.
 
-Current fitness: 0.0221144 ... No improvement for 0 generations.
+Current fitness: 0.02203 ... No improvement for 1 generations.
 
-Current fitness: 0.0220822 ... No improvement for 0 generations.
+Current fitness: 0.0220268 ... No improvement for 0 generations.
 
-Current fitness: 0.0220822 ... No improvement for 1 generations.
+Current fitness: 0.0209599 ... No improvement for 0 generations.
 
-Current fitness: 0.0220797 ... No improvement for 0 generations.
+Current fitness: 0.0194183 ... No improvement for 0 generations.
 
-WARNING: Gradient regression for tuning optimization failed
-Offending Tree:   ( 0.795042 + ( 37.7407 * ( ( ( 45.4429 * x2 ) + ( 98.7997 * ( x4 / ( ( ( ( 46.0609 * x1 ) - ( ( 38.1669 * x1 ) ^ ( 8.47055 * ( x2 / x3 ) ) ) ) )^2 + ( ( ( ( ( 8.75007 * x0 ) - ( 65.1765 * x1 ) ) )^2 - ( 45.0161 * x4 ) ) - ( 93.7432 * x1 ) ) ) ) ) ) / ( ( ( ( 71.7596 * x1 ) - ( ( ( 57.1202 * x4 ) + ( -0.892503 * x1 ) ) ^ ( 168.862 * ( x2 / x3 ) ) ) ) )^2 - ( 41.7575 * x1 ) ) ) ) )
-Current fitness: 0.0207415 ... No improvement for 0 generations.
+Current fitness: 0.0151021 ... No improvement for 0 generations.
 
-Current fitness: 0.0182026 ... No improvement for 0 generations.
+Current fitness: 0.0139939 ... No improvement for 0 generations.
 
-Current fitness: 0.0182969 ... No improvement for 1 generations.
+Current fitness: 0.0143132 ... No improvement for 1 generations.
 
-Current fitness: 0.0159626 ... No improvement for 0 generations.
+Current fitness: 0.0120581 ... No improvement for 0 generations.
 
-Current fitness: 0.0144288 ... No improvement for 0 generations.
+Current fitness: 0.0124183 ... No improvement for 1 generations.
 
-Current fitness: 0.0117454 ... No improvement for 0 generations.
+Current fitness: 0.0115843 ... No improvement for 0 generations.
 
-Current fitness: 0.011738 ... No improvement for 0 generations.
+Current fitness: 0.00875315 ... No improvement for 0 generations.
 
-Current fitness: 0.0117905 ... No improvement for 1 generations.
+Current fitness: 0.00999003 ... No improvement for 1 generations.
 
-Current fitness: 0.0113517 ... No improvement for 0 generations.
+Current fitness: 0.0102181 ... No improvement for 2 generations.
 
-Current fitness: 0.0107884 ... No improvement for 0 generations.
+Current fitness: 0.00842485 ... No improvement for 0 generations.
 
-Current fitness: 0.0113518 ... No improvement for 1 generations.
+Current fitness: 0.00967181 ... No improvement for 1 generations.
 
-Current fitness: 0.0101506 ... No improvement for 0 generations.
+Current fitness: 0.00988987 ... No improvement for 2 generations.
 
-Current fitness: 0.0073003 ... No improvement for 0 generations.
+Current fitness: 0.00958863 ... No improvement for 3 generations.
 
-Current fitness: 0.0087966 ... No improvement for 1 generations.
+Current fitness: 0.00755356 ... No improvement for 0 generations.
 
-Current fitness: 0.00875869 ... No improvement for 2 generations.
+Current fitness: 0.0075469 ... No improvement for 0 generations.
 
-Current fitness: 0.00651202 ... No improvement for 0 generations.
+Current fitness: 0.00733629 ... No improvement for 0 generations.
 
-Current fitness: 0.00651375 ... No improvement for 1 generations.
+Current fitness: 0.00737157 ... No improvement for 1 generations.
 
-Current fitness: 0.00652836 ... No improvement for 2 generations.
+Current fitness: 0.00742823 ... No improvement for 2 generations.
 
-Current fitness: 0.00718819 ... No improvement for 3 generations.
+Current fitness: 0.00718589 ... No improvement for 0 generations.
 
-Current fitness: 0.00747185 ... No improvement for 4 generations.
+Current fitness: 0.00716455 ... No improvement for 0 generations.
 
-Current fitness: 0.00652902 ... No improvement for 5 generations.
+Current fitness: 0.00723127 ... No improvement for 1 generations.
 
-Current fitness: 0.00652074 ... No improvement for 6 generations.
+Current fitness: 0.00729767 ... No improvement for 2 generations.
 
-Current fitness: 0.00652888 ... No improvement for 7 generations.
+Current fitness: 0.00683639 ... No improvement for 0 generations.
 
-Current fitness: 0.00646189 ... No improvement for 0 generations.
+Current fitness: 0.00674953 ... No improvement for 0 generations.
 
-Current fitness: 0.0064619 ... No improvement for 1 generations.
+Current fitness: 0.0065464 ... No improvement for 0 generations.
 
-Current fitness: 0.00645602 ... No improvement for 0 generations.
+Current fitness: 0.00664482 ... No improvement for 1 generations.
 
-Current fitness: 0.00608612 ... No improvement for 0 generations.
+Current fitness: 0.00660103 ... No improvement for 2 generations.
 
-Current fitness: 0.00607907 ... No improvement for 0 generations.
+Current fitness: 0.00660139 ... No improvement for 3 generations.
 
-Current fitness: 0.00623445 ... No improvement for 1 generations.
+Current fitness: 0.00660106 ... No improvement for 4 generations.
 
-Current fitness: 0.00616432 ... No improvement for 2 generations.
+Current fitness: 0.0066448 ... No improvement for 5 generations.
 
-Current fitness: 0.00607907 ... No improvement for 3 generations.
+Current fitness: 0.00660142 ... No improvement for 6 generations.
 
-Current fitness: 0.00617733 ... No improvement for 4 generations.
+Current fitness: 0.00654122 ... No improvement for 0 generations.
 
-Current fitness: 0.0059912 ... No improvement for 0 generations.
+Current fitness: 0.00627156 ... No improvement for 0 generations.
 
-Current fitness: 0.00597412 ... No improvement for 0 generations.
+Current fitness: 0.00616015 ... No improvement for 0 generations.
 
-Current fitness: 0.00597228 ... No improvement for 0 generations.
+Current fitness: 0.00615939 ... No improvement for 1 generations.
 
-Current fitness: 0.00597198 ... No improvement for 1 generations.
+Current fitness: 0.00620552 ... No improvement for 2 generations.
 
-Current fitness: 0.00596964 ... No improvement for 0 generations.
+Current fitness: 0.00615495 ... No improvement for 0 generations.
 
-Current fitness: 0.00596943 ... No improvement for 1 generations.
+Current fitness: 0.00614976 ... No improvement for 0 generations.
 
-Current fitness: 0.00597413 ... No improvement for 2 generations.
+Current fitness: 0.00609848 ... No improvement for 0 generations.
 
-Current fitness: 0.00576144 ... No improvement for 0 generations.
+Current fitness: 0.00612725 ... No improvement for 1 generations.
 
-Current fitness: 0.00576143 ... No improvement for 1 generations.
+Current fitness: 0.00599273 ... No improvement for 0 generations.
 
-Current fitness: 0.00568141 ... No improvement for 0 generations.
+Current fitness: 0.00610792 ... No improvement for 1 generations.
 
-Current fitness: 0.00568139 ... No improvement for 1 generations.
+Current fitness: 0.00609416 ... No improvement for 2 generations.
 
-Current fitness: 0.00578096 ... No improvement for 2 generations.
+Current fitness: 0.00603425 ... No improvement for 3 generations.
 
-Current fitness: 0.00594091 ... No improvement for 3 generations.
+Current fitness: 0.00609728 ... No improvement for 4 generations.
 
-Current fitness: 0.00594087 ... No improvement for 4 generations.
+Current fitness: 0.0060996 ... No improvement for 5 generations.
 
-Current fitness: 0.00582919 ... No improvement for 5 generations.
+Current fitness: 0.00609661 ... No improvement for 6 generations.
 
-Current fitness: 0.00577007 ... No improvement for 6 generations.
+Current fitness: 0.00603588 ... No improvement for 7 generations.
 
-Current fitness: 0.00577005 ... No improvement for 7 generations.
+Current fitness: 0.00613098 ... No improvement for 8 generations.
 
-Current fitness: 0.00574828 ... No improvement for 8 generations.
+Current fitness: 0.00595377 ... No improvement for 0 generations.
 
-Current fitness: 0.00576989 ... No improvement for 9 generations.
+Current fitness: 0.00593205 ... No improvement for 0 generations.
 
-Current fitness: 0.00577006 ... No improvement for 10 generations.
+Current fitness: 0.00593085 ... No improvement for 0 generations.
 
-Current fitness: 0.00570503 ... No improvement for 11 generations.
+Current fitness: 0.00593268 ... No improvement for 1 generations.
 
-Converged after 65 generations.
+Current fitness: 0.00595357 ... No improvement for 2 generations.
+
+Current fitness: 0.0060206 ... No improvement for 3 generations.
+
+Current fitness: 0.00592273 ... No improvement for 0 generations.
+
+Current fitness: 0.00587287 ... No improvement for 0 generations.
+
+Current fitness: 0.00587482 ... No improvement for 1 generations.
+
+Current fitness: 0.00586529 ... No improvement for 0 generations.
+
+Current fitness: 0.00581846 ... No improvement for 0 generations.
+
+Current fitness: 0.00580251 ... No improvement for 0 generations.
+
+Current fitness: 0.00580065 ... No improvement for 0 generations.
+
+Current fitness: 0.00581231 ... No improvement for 1 generations.
+
+Current fitness: 0.0057936 ... No improvement for 0 generations.
+
+Current fitness: 0.00579229 ... No improvement for 0 generations.
+
+Current fitness: 0.00578254 ... No improvement for 0 generations.
+
+Current fitness: 0.00572625 ... No improvement for 0 generations.
+
+Current fitness: 0.00572625 ... No improvement for 1 generations.
+
+Current fitness: 0.00572673 ... No improvement for 2 generations.
+
+Current fitness: 0.00572784 ... No improvement for 3 generations.
+
+Current fitness: 0.00572784 ... No improvement for 4 generations.
+
+Current fitness: 0.00572744 ... No improvement for 5 generations.
+
+Current fitness: 0.00568688 ... No improvement for 0 generations.
+
+Current fitness: 0.00572654 ... No improvement for 1 generations.
+
+Current fitness: 0.00572654 ... No improvement for 2 generations.
+
+Current fitness: 0.00567121 ... No improvement for 0 generations.
+
+Current fitness: 0.00565594 ... No improvement for 0 generations.
+
+Current fitness: 0.00565593 ... No improvement for 1 generations.
+
+Current fitness: 0.00561278 ... No improvement for 0 generations.
+
+Current fitness: 0.00561284 ... No improvement for 1 generations.
+
+Current fitness: 0.0056016 ... No improvement for 0 generations.
+
+Current fitness: 0.00560445 ... No improvement for 1 generations.
+
+Current fitness: 0.00559481 ... No improvement for 0 generations.
+
+Current fitness: 0.00558588 ... No improvement for 0 generations.
+
+Current fitness: 0.00558588 ... No improvement for 1 generations.
+
+Current fitness: 0.00553944 ... No improvement for 0 generations.
+
+Current fitness: 0.00556335 ... No improvement for 1 generations.
+
+Current fitness: 0.00556432 ... No improvement for 2 generations.
+
+Current fitness: 0.00556431 ... No improvement for 3 generations.
+
+Current fitness: 0.0055643 ... No improvement for 4 generations.
+
+Current fitness: 0.00556431 ... No improvement for 5 generations.
+
+Current fitness: 0.0055643 ... No improvement for 6 generations.
+
+Current fitness: 0.00556431 ... No improvement for 7 generations.
+
+Current fitness: 0.00555199 ... No improvement for 8 generations.
+
+Current fitness: 0.00556431 ... No improvement for 9 generations.
+
+Current fitness: 0.00556432 ... No improvement for 10 generations.
+
+Current fitness: 0.00556431 ... No improvement for 11 generations.
+
+Converged after 109 generations.
