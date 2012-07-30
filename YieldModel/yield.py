@@ -28,7 +28,7 @@ def getArea(data):
   IO_Dcache_KB = data[1]
   IO_Icache_KB = data[2]
   IO_shared_L2size_KB = data[3]
-  IO_SIMD_depth = data[4]/data[5]
+  IO_SIMD_depth = data[4]
   IO_SIMD_width = data[5]
 
   IO_core_alus = IO_SIMD_width*alus
@@ -37,14 +37,16 @@ def getArea(data):
   IO_scale_factor = 1.0/base_clock_GHz/base_clock_GHz*IO_clock_GHz*IO_clock_GHz;
   IO_core = IO_core_area * IO_scale_factor
   IO_core_alus = IO_core_alus*IO_scale_factor
+  alus_scaled = alus*IO_scale_factor
   IO_core_regs = IO_core_regs*IO_scale_factor
+  reg_scaled_wDepth = reg*IO_SIMD_depth*IO_scale_factor
   IO_L1 = (IO_Icache_KB+IO_Dcache_KB)*l1area_per_KB
   IO_area = IO_core+IO_L1
   IO_L2 = IO_shared_L2size_KB*l2area_per_KB
   IO_all = IO_area*num_IOs + IO_L2
   die_area_IO_all = IO_all/base_tech*tech_node
 
-  areaOut = [IO_core, IO_core_alus, IO_core_regs, IO_L1, IO_area, IO_L2, IO_all, die_area_IO_all]
+  areaOut = [IO_core, alus_scaled, reg_scaled_wDepth, IO_skeleton*IO_scale_factor, IO_L1, IO_area, IO_L2, IO_all, die_area_IO_all]
 
   return areaOut
 
@@ -66,7 +68,7 @@ def getDieYield(config):
   laneYield = getYieldComp(laneArea)
   laneRedYield = getRedYield(laneYield, config[5], config[7])
 
-  skeletonArea = areaList[0]-areaList[1]-areaList[2]
+  skeletonArea = areaList[3]
   skeletonYield = getYieldComp(skeletonArea)
   l1CacheYield = 1
   coreYield = laneRedYield * l1CacheYield * skeletonYield
@@ -76,16 +78,10 @@ def getDieYield(config):
 
   dieYield = coreYield*l2CacheYield
 
-  if(config==[1, 16, 16, 4096, 1, 1, 0, 0, 0]):
-    print areaList[6]
-    print laneArea
-    print laneYield
-    print laneRedYield 
-    print skeletonArea
-    print skeletonYield
-    print coreYield
-    print coreRedYield
-    print dieYield
+  print config
+  print areaList
+  print "Lane area: "+str(laneArea)
+  print dieYield
 
   return dieYield
 
@@ -104,7 +100,7 @@ if __name__=='__main__':
   output=file('perfYieldOut.txt','w')
 
   #Parse configuration sata
-  configDataFile=file('config.txt','r')
+  configDataFile=file('configPerato.txt','r')
   for line in configDataFile:
     configList.append(line.rstrip().split(' '))
   configDataFile.close()
