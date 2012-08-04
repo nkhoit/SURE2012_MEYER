@@ -6,11 +6,11 @@ import os
 import fileinput
 import math
 
-defectDensity=0.025
-n=16.5
-
 def comb(n,k):
   return reduce(lambda a,b: a*(n-b)/(b+1),xrange(k),1)
+
+def binompdf(n,p,i):
+  return float(comb(n,i)*(p**i)*((1-p)**(n-i)))
 
 def getArea(data):
   base_clock_GHz = 2.6
@@ -20,38 +20,43 @@ def getArea(data):
   reg = 0.199358389
   alus = 0.513011101
   l2area_per_KB = 11.0/1024
-  OOO_1way_area = 3.207190567/2
   IO_skeleton = 1.005347206-reg-alus
-  IO_clock_GHz = 1.0
+  IO_clock_GHz = 2.0
 
   num_IOs = data[0]
   IO_Dcache_KB = data[1]
   IO_Icache_KB = data[2]
   IO_shared_L2size_KB = data[3]
-  IO_SIMD_depth = data[4]
+  IO_SIMD_depth = data[4]/data[5]
   IO_SIMD_width = data[5]
 
-  IO_core_alus = IO_SIMD_width*alus
-  IO_core_regs = IO_SIMD_width*IO_SIMD_depth*reg
+  IO_core_alus = (IO_SIMD_width+config[7])*alus
+  IO_core_regs = (IO_SIMD_width+config[7])*IO_SIMD_depth*reg
   IO_core_area = IO_skeleton + IO_core_alus + IO_core_regs
   IO_scale_factor = 1.0/base_clock_GHz/base_clock_GHz*IO_clock_GHz*IO_clock_GHz;
+
   IO_core = IO_core_area * IO_scale_factor
-  IO_core_alus = IO_core_alus*IO_scale_factor
   alus_scaled = alus*IO_scale_factor
-  IO_core_regs = IO_core_regs*IO_scale_factor
   reg_scaled_wDepth = reg*IO_SIMD_depth*IO_scale_factor
+
   IO_L1 = (IO_Icache_KB+IO_Dcache_KB)*l1area_per_KB
   IO_area = IO_core+IO_L1
+
   IO_L2 = IO_shared_L2size_KB*l2area_per_KB
-  IO_all = IO_area*num_IOs + IO_L2
+  IO_all = IO_area*(num_IOs+config[6]) + IO_L2
+  IO_all += (alus_scaled+reg_scaled_wDepth)*config[8]*config[0]/2
+
   die_area_IO_all = IO_all/base_tech*tech_node
 
   areaOut = [IO_core, alus_scaled, reg_scaled_wDepth, IO_skeleton*IO_scale_factor, IO_L1, IO_area, IO_L2, IO_all, die_area_IO_all]
 
   return areaOut
 
-def getYieldComp(compArea):
-  return 1/math.pow(1+(compArea/100)*defectDensity, n)
+def getYieldComp(compArea_mm):
+  defectDensity=0.025
+  n=16.5
+
+  return 1/math.pow(1+(compArea_mm/100)*defectDensity, n)
 
 def getRedYield(compYield, base, spare):
   y = 0.0
@@ -60,29 +65,49 @@ def getRedYield(compYield, base, spare):
     
   return y
 
+def getCost(dieYield, dieArea):
+  waferCost=3000  #Wafer cost in USD
+  waferDiameter=300  #Wafer diameter in mm^2
+
+  dicePerWafer = (math.pi*(waferDiameter/2)**2/dieArea)-(math.pi*waferDiameter/math.sqrt(2*dieArea))
+  dieCost = waferCost/(dicePerWafer*dieYield)
+
+  return dieCost
+
+
 def getDieYield(config):
 
   areaList = getArea(config)
+  numCores = config[0]
+  sslYield = 1
 
   laneArea = areaList[1]+areaList[2]
   laneYield = getYieldComp(laneArea)
   laneRedYield = getRedYield(laneYield, config[5], config[7])
+  
+  if(config[8]>0):
+    sslYield = 2*binompdf(config[5], laneYield, config[5]-1)*binompdf(config[5], laneYield, config[5])*laneYield
+    sslYield += binompdf(config[5], laneYield, config[5])*binompdf(config[5], laneYield, config[5])*laneYield
+    numCores=numCores%2
 
   skeletonArea = areaList[3]
   skeletonYield = getYieldComp(skeletonArea)
   l1CacheYield = 1
   coreYield = laneRedYield * l1CacheYield * skeletonYield
-  coreRedYield = getRedYield(coreYield, config[0], config[6])
+  coreRedYield = getRedYield(coreYield, numCores, config[6])
 
   l2CacheYield = 1
 
-  dieYield = coreYield*l2CacheYield
+  dieYield = coreRedYield*l2CacheYield*(sslYield**(config[0]/2))
 
+  dieCost = getCost(dieYield,areaList[8])
+  
   print config
   print areaList
-  print "Lane area: "+str(laneArea)
-  print dieYield
-
+  print "Lane Area: " + str(laneArea) + "mm^2"
+  print "Die Yield: " + str(dieYield) 
+  print "Die Cost: " + str(dieCost) + "\n"
+ 
   return dieYield
 
 def getPerformance(config):
@@ -100,7 +125,7 @@ if __name__=='__main__':
   output=file('perfYieldOut.txt','w')
 
   #Parse configuration sata
-  configDataFile=file('configPerato.txt','r')
+  configDataFile=file('configPoster.txt','r')
   for line in configDataFile:
     configList.append(line.rstrip().split(' '))
   configDataFile.close()
@@ -113,6 +138,3 @@ if __name__=='__main__':
 
   output.close()
 
-  
-    
-  
