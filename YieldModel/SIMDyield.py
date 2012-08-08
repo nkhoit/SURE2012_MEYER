@@ -5,13 +5,70 @@ import sympy
 import os
 import fileinput
 import math
+import operator
 
+#Combination Function
 def comb(n,k):
   return reduce(lambda a,b: a*(n-b)/(b+1),xrange(k),1)
 
+#Binomial Probability Distribution Function
 def binompdf(n,p,i):
   return float(comb(n,i)*(p**i)*((1-p)**(n-i)))
 
+def generateConfigurations():
+  cores = [1,2,4,8,10,12,14,16,18,20]
+  numThreads = [1,2,4,8,16,32,64]
+  lanes = [1,2,4,8,16,32,64]
+  DCache = [16,32,64]
+  ICache = [16,32,64]
+  L2Cache = [4096]
+
+  configList = []
+
+  for i in cores:
+    for j in numThreads:
+      for k in lanes:
+        if(k>j):
+          break
+        for l in DCache:
+          for m in ICache:
+            for o in L2Cache:
+              configList.append([i,l,m,o,j,k,0,0,0])
+
+  for i in cores:
+    for j in numThreads:
+      for k in lanes:
+        if(k>j):
+          break
+        for l in DCache:
+          for m in ICache:
+            for o in L2Cache:
+              configList.append([i,l,m,o,j,k,1,0,0])
+
+  for i in cores:
+    for j in numThreads:
+      for k in lanes:
+        if(k>j):
+          break
+        for l in DCache:
+          for m in ICache:
+            for o in L2Cache:
+              configList.append([i,l,m,o,j,k,0,1,0])
+  
+  for i in cores:
+    for j in numThreads:
+      for k in lanes:
+        if(k>j):
+          break
+        for l in DCache:
+          for m in ICache:
+            for o in L2Cache:
+              configList.append([i,l,m,o,j,k,0,0,1])
+
+
+  return configList
+
+#Gets the areas of each component on a SIMD chip
 def getArea(data):
   base_clock_GHz = 2.6
   base_tech = 65
@@ -21,7 +78,7 @@ def getArea(data):
   alus = 0.513011101
   l2area_per_KB = 11.0/1024
   IO_skeleton = 1.005347206-reg-alus
-  IO_clock_GHz = 2.0
+  IO_clock_GHz = 1.0
 
   num_IOs = data[0]
   IO_Dcache_KB = data[1]
@@ -75,7 +132,7 @@ def getCost(dieYield, dieArea):
   return dieCost
 
 
-def getDieYield(config):
+def getDieAreaYieldCost(config):
 
   areaList = getArea(config)
   numCores = config[0]
@@ -102,15 +159,17 @@ def getDieYield(config):
 
   dieCost = getCost(dieYield,areaList[8])
   
+  '''
   print config
   print areaList
   print "Lane Area: " + str(laneArea) + "mm^2"
   print "Die Yield: " + str(dieYield) 
   print "Die Cost: " + str(dieCost) + "\n"
+  '''
  
-  return dieYield
+  return [areaList[8],dieYield,dieCost]
 
-def getPerformance(config):
+def getAvgPerf(config):
 
   eq = sympy.sympify('( 11.5417 + ( 0.00508481 * ( ( ( ( ( ( ( 6.77246 * x2 ) - ( ( ( ( ( 44.8533 * x0 ) + ( 36.9014 * x5 ) ) - ( ( 80.7387 * x1 ) + ( 107.142 * ( ( ( ( ( -131.701 * x4 ) + ( 1.42475 * x1 ) ) / x4 ) / ( ( ( 3.01692 * x0 ) + ( 3.22937 * x4 ) ) + ( 0.00137602 * x3 ) ) ) * ( ( ( 25.0434 * x1 ) - ( ( ( -6.01733 * x4 ) + ( ( ( -108.891 * x0 ) + ( 2.42072 * x5 ) ) + ( 28.8689 * x1 ) ) ) - ( ( 126.135 * x4 ) + ( 0.0688717 * x3 ) ) ) ) / ( ( 101.054 * x0 ) + ( 0.0860422 * x4 ) ) ) ) ) ) ) - ( 50.581 * x1 ) ) + ( 192.039 * x4 ) ) ) - ( 4.87047 * x6 ) ) + ( 64.5344 * ( ( x1 / ( ( 50.1788 * x4 ) + ( ( ( 5.29947 * x0 ) + ( 0.586408 * x5 ) ) + ( 104.23 * x1 ) ) ) ) * ( ( -54.5872 * ( x1 / ( x3 / x0 ) ) ) + ( 73.8578 * x1 ) ) ) ) ) - ( -4.66654 * x6 ) ) + ( 79.3636 * ( ( x1 / ( ( 0.593013 * x4 ) + ( 125.153 * x1 ) ) ) * ( ( 2.2734 * ( x3 / x0 ) ) + ( ( ( 73.9176 * x0 ) + ( 59.3446 * x5 ) ) - ( ( 0.274337 * ( ( ( ( 125.534 * x3 ) - ( 13.3396 * x1 ) ) * ( ( -9.05838 * x4 ) + ( 102.807 * x1 ) ) ) / x3 ) ) + ( 88.4397 * x1 ) ) ) ) ) ) ) / x1 ) ) )')
 
@@ -122,19 +181,107 @@ if __name__=='__main__':
   configList=[]
   perfYield=[]
 
-  output=file('perfYieldOut.txt','w')
-
+  output=file('yieldEverything.txt','w')
+  
+  '''
   #Parse configuration sata
   configDataFile=file('configPoster.txt','r')
   for line in configDataFile:
     configList.append(line.rstrip().split(' '))
   configDataFile.close()
+  '''
 
-  for config in configList:
+  configList=generateConfigurations()
+
+
+  for i,config in enumerate(configList):
     config = map(int, config)
+    '''
     dataPoint=[getPerformance(config), getDieYield(config)]
     output.write(str(dataPoint[0])+' '+str(dataPoint[1])+';'+'\n')
     perfYield.append(dataPoint)
+    '''
+    if(i<int(len(configList)/4)):
+      dieOut=getDieAreaYieldCost(config)
+      perfOut=getAvgPerf(config)
+
+      dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
+      perfYield.append(dataOut)
+
+    '''
+    change=[0,0,0]
+    if(i%4==0):
+      base=dieOut
+    else:
+      for j in range(len(base)):
+        change[j]=(dieOut[j]-base[j])/base[j]
+
+      temp=' '.join(str(n) for n in config)
+      output.write('"'+temp+'"'+','+str(change[0])+','+str(change[1])+','+str(change[2])+',,')
+      if(i%4==3):
+        output.write('\n')
+    '''
+
+  
+  perfYield=sorted(perfYield, key=operator.itemgetter(3))
+  perfList=[]
+  peratoOptimalBase=[]
+  index=0
+  for line in perfYield:
+    perfList.append(line[4])
+
+  while(index<len(perfYield)):
+    index=perfList.index(max(perfList[index:]))
+    peratoOptimalBase.append(perfYield[index][0])
+    #output.write(str(perfYield[index])+'\n')
+    index=index+1
+
+  peratoOptimalAll=[]
+  for config in peratoOptimalBase:
+    config[6:]=[0,0,0]
+    dieOut=getDieAreaYieldCost(config)
+    perfOut=getAvgPerf(config)
+
+    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
+    peratoOptimalAll.append(dataOut)
+
+    temp=' '.join(str(n) for n in config)
+    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
+
+  for config in peratoOptimalBase:
+    config[6:]=[1,0,0]
+    dieOut=getDieAreaYieldCost(config)
+    perfOut=getAvgPerf(config)
+
+    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
+    peratoOptimalAll.append(dataOut)
+
+    temp=' '.join(str(n) for n in config)
+    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
+
+  for config in peratoOptimalBase:
+    config[6:]=[0,1,0]
+    dieOut=getDieAreaYieldCost(config)
+    perfOut=getAvgPerf(config)
+
+    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
+    peratoOptimalAll.append(dataOut)
+
+    temp=' '.join(str(n) for n in config)
+    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
+
+  for config in peratoOptimalBase:
+    config[6:]=[0,0,1]
+    dieOut=getDieAreaYieldCost(config)
+    perfOut=getAvgPerf(config)
+
+    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
+    peratoOptimalAll.append(dataOut)
+
+    temp=' '.join(str(n) for n in config)
+    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
+
+
 
   output.close()
 

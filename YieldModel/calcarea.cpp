@@ -68,7 +68,7 @@ void calcArea(configuration& config) {
 
 int main(){
   configuration config={2.0,1,16,16,4096,4,1,0,0,0};
-  configuration config2={2.0,20,64,16,4096,1,8,0,0,0};
+  configuration config2={1.0,1,16,16,4096,4,1,0,0,0};
   calcArea(config);
   calcArea(config2);
   cout << config.area << endl;
