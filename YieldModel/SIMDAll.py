@@ -150,107 +150,18 @@ if __name__=='__main__':
   configList=[]
   perfYield=[]
 
-  output=file('yieldEverything.txt','w')
+  output=file('allDataLaneSparing.txt','w')
   
-  '''
-  #Parse configuration sata
-  configDataFile=file('configPoster.txt','r')
-  for line in configDataFile:
-    configList.append(line.rstrip().split(' '))
-  configDataFile.close()
-  '''
-
   configList=generateConfigurations()
-
 
   for i,config in enumerate(configList):
     config = map(int, config)
-    '''
-    dataPoint=[getPerformance(config), getDieYield(config)]
-    output.write(str(dataPoint[0])+' '+str(dataPoint[1])+';'+'\n')
-    perfYield.append(dataPoint)
-    '''
-    if(i<int(len(configList)/4)):
-      dieOut=getDieAreaYieldCost(config)
-      perfOut=getAvgPerf(config)
-
-      dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-      perfYield.append(dataOut)
-
-    '''
-    change=[0,0,0]
-    if(i%4==0):
-      base=dieOut
-    else:
-      for j in range(len(base)):
-        change[j]=(dieOut[j]-base[j])/base[j]
-
-      temp=' '.join(str(n) for n in config)
-      output.write('"'+temp+'"'+','+str(change[0])+','+str(change[1])+','+str(change[2])+',,')
-      if(i%4==3):
-        output.write('\n')
-    '''
-
-  
-  perfYield=sorted(perfYield, key=operator.itemgetter(3))
-  perfList=[]
-  peratoOptimalBase=[]
-  index=0
-  for line in perfYield:
-    perfList.append(line[4])
-
-  while(index<len(perfYield)):
-    index=perfList.index(max(perfList[index:]))
-    peratoOptimalBase.append(perfYield[index][0])
-    #output.write(str(perfYield[index])+'\n')
-    index=index+1
-
-  peratoOptimalAll=[]
-  for config in peratoOptimalBase:
-    config[6:]=[0,0,0]
     dieOut=getDieAreaYieldCost(config)
     perfOut=getAvgPerf(config)
 
     dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-  for config in peratoOptimalBase:
-    config[6:]=[1,0,0]
-    dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
-
-    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-  for config in peratoOptimalBase:
-    config[6:]=[0,1,0]
-    dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
-
-    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-  for config in peratoOptimalBase:
-    config[6:]=[0,0,1]
-    dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
-
-    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-
+    output.write('"'+' '.join(str(n) for n in config)+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
+    perfYield.append(dataOut)
 
   output.close()
 

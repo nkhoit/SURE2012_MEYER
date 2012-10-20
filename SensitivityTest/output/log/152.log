@@ -1,0 +1,429 @@
+1 16 16 4096 1 1 0 0 0  : 0.212155
+1 16 16 4096 16 8 0 0 0  : 0.137334
+1 16 16 4096 32 2 0 0 0  : 0.157287
+1 16 16 4096 4 2 0 0 0  : 0.157304
+1 16 16 4096 64 32 0 0 0  : 0.220248
+1 16 16 4096 8 2 0 0 0  : 0.156635
+1 32 16 4096 16 16 0 0 0  : 0.13242
+1 32 16 4096 2 2 0 0 0  : 0.170181
+1 32 16 4096 32 4 0 0 0  : 0.13663
+1 32 16 4096 8 8 0 0 0  : 0.13774
+1 64 16 4096 16 4 0 0 0  : 0.140518
+1 64 16 4096 4 1 0 0 0  : 0.187454
+1 64 16 4096 64 2 0 0 0  : 0.146816
+1 64 16 4096 8 1 0 0 0  : 0.187122
+1 8 16 4096 16 1 0 0 0  : 0.183557
+1 8 16 4096 2 1 0 0 0  : 0.188585
+1 8 16 4096 32 32 0 0 0  : 0.245639
+1 8 16 4096 4 4 0 0 0  : 0.149122
+1 8 16 4096 64 4 0 0 0  : 0.26917
+1 8 16 4096 8 4 0 0 0  : 0.145456
+10 16 16 4096 32 8 0 0 0  : 0.137
+12 16 16 4096 16 1 0 0 0  : 0.123442
+12 16 16 4096 2 1 0 0 0  : 0.123627
+12 16 16 4096 32 32 0 0 0  : 0.13757
+12 16 16 4096 4 4 0 0 0  : 0.11874
+12 16 16 4096 64 4 0 0 0  : 0.169647
+12 16 16 4096 8 4 0 0 0  : 0.118036
+12 32 16 4096 16 2 0 0 0  : 0.119536
+12 32 16 4096 32 8 0 0 0  : 0.117225
+12 32 16 4096 64 8 0 0 0  : 0.137493
+12 64 16 4096 1 1 0 0 0  : 0.126305
+12 64 16 4096 16 8 0 0 0  : 0.116811
+12 64 16 4096 32 2 0 0 0  : 0.118904
+12 64 16 4096 4 2 0 0 0  : 0.119524
+12 64 16 4096 64 32 0 0 0  : 0.117706
+12 64 16 4096 8 2 0 0 0  : 0.119444
+12 8 16 4096 16 16 0 0 0  : 0.138998
+12 8 16 4096 2 2 0 0 0  : 0.121735
+12 8 16 4096 32 4 0 0 0  : 0.168338
+12 8 16 4096 8 8 0 0 0  : 0.120102
+16 16 16 4096 16 4 0 0 0  : 0.116605
+16 16 16 4096 4 1 0 0 0  : 0.118974
+16 16 16 4096 64 2 0 0 0  : 0.170247
+16 16 16 4096 8 1 0 0 0  : 0.118978
+16 32 16 4096 16 1 0 0 0  : 0.118816
+16 32 16 4096 2 1 0 0 0  : 0.118797
+16 32 16 4096 32 32 0 0 0  : 0.117863
+16 32 16 4096 4 4 0 0 0  : 0.116407
+16 32 16 4096 64 4 0 0 0  : 0.134038
+16 32 16 4096 8 4 0 0 0  : 0.116092
+16 64 16 4096 16 2 0 0 0  : 0.116952
+16 64 16 4096 32 8 0 0 0  : 0.115602
+16 64 16 4096 64 8 0 0 0  : 0.116875
+16 8 16 4096 1 1 0 0 0  : 0.12081
+16 8 16 4096 16 8 0 0 0  : 0.138419
+16 8 16 4096 32 2 0 0 0  : 0.169235
+16 8 16 4096 4 2 0 0 0  : 0.117542
+16 8 16 4096 64 32 0 0 0  : 0.194088
+16 8 16 4096 8 2 0 0 0  : 0.117608
+2 16 16 4096 16 16 0 0 0  : 0.13235
+2 16 16 4096 2 2 0 0 0  : 0.142364
+2 16 16 4096 32 4 0 0 0  : 0.143268
+2 16 16 4096 8 8 0 0 0  : 0.12623
+2 32 16 4096 16 4 0 0 0  : 0.127448
+2 32 16 4096 4 1 0 0 0  : 0.15089
+2 32 16 4096 64 2 0 0 0  : 0.136539
+2 32 16 4096 8 1 0 0 0  : 0.150757
+2 64 16 4096 16 1 0 0 0  : 0.150061
+2 64 16 4096 2 1 0 0 0  : 0.151039
+2 64 16 4096 32 32 0 0 0  : 0.122007
+2 64 16 4096 4 4 0 0 0  : 0.131376
+2 64 16 4096 64 4 0 0 0  : 0.122658
+2 64 16 4096 8 4 0 0 0  : 0.127611
+2 8 16 4096 16 2 0 0 0  : 0.142503
+2 8 16 4096 32 8 0 0 0  : 0.182111
+2 8 16 4096 64 8 0 0 0  : 0.216195
+20 16 16 4096 1 1 0 0 0  : 0.120479
+20 16 16 4096 16 8 0 0 0  : 0.117489
+20 16 16 4096 32 2 0 0 0  : 0.127912
+20 16 16 4096 4 2 0 0 0  : 0.117235
+20 16 16 4096 64 32 0 0 0  : 0.16508
+20 16 16 4096 8 2 0 0 0  : 0.117235
+20 32 16 4096 16 16 0 0 0  : 0.11573
+20 32 16 4096 2 2 0 0 0  : 0.117707
+20 32 16 4096 32 4 0 0 0  : 0.116652
+20 32 16 4096 8 8 0 0 0  : 0.115793
+20 64 16 4096 16 4 0 0 0  : 0.116085
+20 64 16 4096 4 1 0 0 0  : 0.11872
+20 64 16 4096 64 2 0 0 0  : 0.117186
+20 64 16 4096 8 1 0 0 0  : 0.11874
+20 8 16 4096 16 1 0 0 0  : 0.127094
+20 8 16 4096 2 1 0 0 0  : 0.119327
+20 8 16 4096 32 32 0 0 0  : 0.167124
+20 8 16 4096 4 4 0 0 0  : 0.116925
+20 8 16 4096 64 4 0 0 0  : 0.199481
+20 8 16 4096 8 4 0 0 0  : 0.117137
+4 16 16 4096 16 16 0 0 0  : 0.124623
+4 16 16 4096 2 2 0 0 0  : 0.128392
+4 16 16 4096 32 4 0 0 0  : 0.137066
+4 16 16 4096 8 8 0 0 0  : 0.120458
+4 32 16 4096 16 4 0 0 0  : 0.120886
+4 32 16 4096 32 16 0 0 0  : 0.121108
+4 32 16 4096 4 1 0 0 0  : 0.132555
+4 32 16 4096 64 2 0 0 0  : 0.131651
+4 32 16 4096 8 1 0 0 0  : 0.13246
+4 64 16 4096 16 1 0 0 0  : 0.132126
+4 64 16 4096 2 1 0 0 0  : 0.132593
+4 64 16 4096 32 32 0 0 0  : 0.11844
+4 64 16 4096 4 4 0 0 0  : 0.122767
+4 64 16 4096 64 4 0 0 0  : 0.118738
+4 64 16 4096 8 4 0 0 0  : 0.120868
+4 8 16 4096 16 2 0 0 0  : 0.134871
+4 8 16 4096 32 8 0 0 0  : 0.168501
+4 8 16 4096 64 8 0 0 0  : 0.200603
+5 32 16 4096 32 4 0 0 0  : 0.120154
+6 16 16 4096 16 4 0 0 0  : 0.121224
+6 16 16 4096 4 1 0 0 0  : 0.132759
+6 16 16 4096 64 2 0 0 0  : 0.170943
+6 16 16 4096 8 1 0 0 0  : 0.132684
+6 32 16 4096 16 1 0 0 0  : 0.132216
+6 32 16 4096 2 1 0 0 0  : 0.132719
+6 32 16 4096 32 32 0 0 0  : 0.12282
+6 32 16 4096 4 4 0 0 0  : 0.122874
+6 32 16 4096 64 4 0 0 0  : 0.136151
+6 32 16 4096 8 4 0 0 0  : 0.120986
+6 64 16 4096 16 2 0 0 0  : 0.12466
+6 64 16 4096 32 8 0 0 0  : 0.118626
+6 64 16 4096 64 8 0 0 0  : 0.117441
+6 8 16 4096 1 1 0 0 0  : 0.139163
+6 8 16 4096 16 8 0 0 0  : 0.140411
+6 8 16 4096 32 2 0 0 0  : 0.170769
+6 8 16 4096 4 2 0 0 0  : 0.125492
+6 8 16 4096 64 32 0 0 0  : 0.196237
+6 8 16 4096 8 2 0 0 0  : 0.125496
+7 32 16 4096 8 1 0 0 0  : 0.132531
+8 16 16 4096 16 2 0 0 0  : 0.119795
+8 16 16 4096 32 8 0 0 0  : 0.138207
+8 16 16 4096 64 8 0 0 0  : 0.168479
+8 32 16 4096 1 1 0 0 0  : 0.126398
+8 32 16 4096 16 8 0 0 0  : 0.116887
+8 32 16 4096 32 2 0 0 0  : 0.119032
+8 32 16 4096 4 2 0 0 0  : 0.119608
+8 32 16 4096 64 32 0 0 0  : 0.137874
+8 32 16 4096 8 2 0 0 0  : 0.119527
+8 64 16 4096 16 16 0 0 0  : 0.116543
+8 64 16 4096 2 2 0 0 0  : 0.121159
+8 64 16 4096 32 4 0 0 0  : 0.117359
+8 64 16 4096 8 8 0 0 0  : 0.117137
+8 8 16 4096 16 4 0 0 0  : 0.137306
+8 8 16 4096 4 1 0 0 0  : 0.123905
+8 8 16 4096 64 2 0 0 0  : 0.194277
+8 8 16 4096 8 1 0 0 0  : 0.124046
+
+Current fitness: 0.0856833 ... No improvement for 0 generations.
+
+Current fitness: 0.0857043 ... No improvement for 1 generations.
+
+Current fitness: 0.0856833 ... No improvement for 2 generations.
+
+Current fitness: 0.0856833 ... No improvement for 3 generations.
+
+Current fitness: 0.0846508 ... No improvement for 0 generations.
+
+Current fitness: 0.0741089 ... No improvement for 0 generations.
+
+Current fitness: 0.0642958 ... No improvement for 0 generations.
+
+Current fitness: 0.0684107 ... No improvement for 1 generations.
+
+Current fitness: 0.0684107 ... No improvement for 2 generations.
+
+Current fitness: 0.0586129 ... No improvement for 0 generations.
+
+Current fitness: 0.0490196 ... No improvement for 0 generations.
+
+Current fitness: 0.0490196 ... No improvement for 1 generations.
+
+Current fitness: 0.0450157 ... No improvement for 0 generations.
+
+Current fitness: 0.0485991 ... No improvement for 1 generations.
+
+Current fitness: 0.0383605 ... No improvement for 0 generations.
+
+Current fitness: 0.0425837 ... No improvement for 1 generations.
+
+Current fitness: 0.0344686 ... No improvement for 0 generations.
+
+Current fitness: 0.0352292 ... No improvement for 1 generations.
+
+Current fitness: 0.0343358 ... No improvement for 0 generations.
+
+Current fitness: 0.0349326 ... No improvement for 1 generations.
+
+Current fitness: 0.0344801 ... No improvement for 2 generations.
+
+Current fitness: 0.0330715 ... No improvement for 0 generations.
+
+Current fitness: 0.0308273 ... No improvement for 0 generations.
+158
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+182
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0293752 ... No improvement for 0 generations.
+
+Current fitness: 0.0283768 ... No improvement for 0 generations.
+155
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0278738 ... No improvement for 0 generations.
+
+Current fitness: 0.0282622 ... No improvement for 1 generations.
+168
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+162
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0291787 ... No improvement for 2 generations.
+169
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+203
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+165
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+163
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+156
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0206278 ... No improvement for 0 generations.
+153
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+203
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+159
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0284035 ... No improvement for 1 generations.
+178
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+218
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+153
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+164
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0271799 ... No improvement for 2 generations.
+172
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+197
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+158
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+169
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+218
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+156
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0237046 ... No improvement for 3 generations.
+155
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+206
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+167
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+156
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+161
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0219243 ... No improvement for 4 generations.
+186
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+197
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+153
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0239519 ... No improvement for 5 generations.
+162
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+155
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+158
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+211
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+183
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+218
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+182
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+171
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0223041 ... No improvement for 6 generations.
+203
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+167
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+168
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+157
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.02199 ... No improvement for 7 generations.
+155
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+181
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+157
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+159
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0221705 ... No improvement for 8 generations.
+161
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+191
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+163
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+172
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+177
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.021307 ... No improvement for 9 generations.
+170
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+168
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+159
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+156
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+155
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+214
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+159
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0214463 ... No improvement for 10 generations.
+160
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+157
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+218
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+159
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+159
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+180
+
+WARNING: Too many tuning params for gradient optimization, skipping...
+
+Current fitness: 0.0206738 ... No improvement for 11 generations.
+
+Converged after 40 generations.

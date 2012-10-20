@@ -100,6 +100,13 @@ def getCost(dieYield, dieArea):
 
   return dieCost
 
+def getAvgPerf(config):
+
+  eq = sympy.sympify('( 11.5417 + ( 0.00508481 * ( ( ( ( ( ( ( 6.77246 * x2 ) - ( ( ( ( ( 44.8533 * x0 ) + ( 36.9014 * x5 ) ) - ( ( 80.7387 * x1 ) + ( 107.142 * ( ( ( ( ( -131.701 * x4 ) + ( 1.42475 * x1 ) ) / x4 ) / ( ( ( 3.01692 * x0 ) + ( 3.22937 * x4 ) ) + ( 0.00137602 * x3 ) ) ) * ( ( ( 25.0434 * x1 ) - ( ( ( -6.01733 * x4 ) + ( ( ( -108.891 * x0 ) + ( 2.42072 * x5 ) ) + ( 28.8689 * x1 ) ) ) - ( ( 126.135 * x4 ) + ( 0.0688717 * x3 ) ) ) ) / ( ( 101.054 * x0 ) + ( 0.0860422 * x4 ) ) ) ) ) ) ) - ( 50.581 * x1 ) ) + ( 192.039 * x4 ) ) ) - ( 4.87047 * x6 ) ) + ( 64.5344 * ( ( x1 / ( ( 50.1788 * x4 ) + ( ( ( 5.29947 * x0 ) + ( 0.586408 * x5 ) ) + ( 104.23 * x1 ) ) ) ) * ( ( -54.5872 * ( x1 / ( x3 / x0 ) ) ) + ( 73.8578 * x1 ) ) ) ) ) - ( -4.66654 * x6 ) ) + ( 79.3636 * ( ( x1 / ( ( 0.593013 * x4 ) + ( 125.153 * x1 ) ) ) * ( ( 2.2734 * ( x3 / x0 ) ) + ( ( ( 73.9176 * x0 ) + ( 59.3446 * x5 ) ) - ( ( 0.274337 * ( ( ( ( 125.534 * x3 ) - ( 13.3396 * x1 ) ) * ( ( -9.05838 * x4 ) + ( 102.807 * x1 ) ) ) / x3 ) ) + ( 88.4397 * x1 ) ) ) ) ) ) ) / x1 ) ) )')
+
+  result=eq.subs('x0',config[0]).subs('x1',config[1]).subs('x2',config[2]).subs('x3',config[3]).subs('x4',config[4]).subs('x5',config[5]).subs('x6',config[6]).subs('x7',config[7]).subs('x8',config[8])
+
+  return result
 
 def getDieAreaYieldCost(config):
 
@@ -121,6 +128,8 @@ def getDieAreaYieldCost(config):
   l1CacheYield = 1
   coreYield = laneRedYield * l1CacheYield * skeletonYield
   coreRedYield = getRedYield(coreYield, numCores, config[6])
+  
+  coreAllWorking = binompdf(coreYield,numCores,numCores)
 
   l2CacheYield = 1
 
@@ -138,59 +147,21 @@ def getDieAreaYieldCost(config):
  
   return [areaList[8],dieYield,dieCost]
 
-def getAvgPerf(config):
-
-  eq = sympy.sympify('( 11.5417 + ( 0.00508481 * ( ( ( ( ( ( ( 6.77246 * x2 ) - ( ( ( ( ( 44.8533 * x0 ) + ( 36.9014 * x5 ) ) - ( ( 80.7387 * x1 ) + ( 107.142 * ( ( ( ( ( -131.701 * x4 ) + ( 1.42475 * x1 ) ) / x4 ) / ( ( ( 3.01692 * x0 ) + ( 3.22937 * x4 ) ) + ( 0.00137602 * x3 ) ) ) * ( ( ( 25.0434 * x1 ) - ( ( ( -6.01733 * x4 ) + ( ( ( -108.891 * x0 ) + ( 2.42072 * x5 ) ) + ( 28.8689 * x1 ) ) ) - ( ( 126.135 * x4 ) + ( 0.0688717 * x3 ) ) ) ) / ( ( 101.054 * x0 ) + ( 0.0860422 * x4 ) ) ) ) ) ) ) - ( 50.581 * x1 ) ) + ( 192.039 * x4 ) ) ) - ( 4.87047 * x6 ) ) + ( 64.5344 * ( ( x1 / ( ( 50.1788 * x4 ) + ( ( ( 5.29947 * x0 ) + ( 0.586408 * x5 ) ) + ( 104.23 * x1 ) ) ) ) * ( ( -54.5872 * ( x1 / ( x3 / x0 ) ) ) + ( 73.8578 * x1 ) ) ) ) ) - ( -4.66654 * x6 ) ) + ( 79.3636 * ( ( x1 / ( ( 0.593013 * x4 ) + ( 125.153 * x1 ) ) ) * ( ( 2.2734 * ( x3 / x0 ) ) + ( ( ( 73.9176 * x0 ) + ( 59.3446 * x5 ) ) - ( ( 0.274337 * ( ( ( ( 125.534 * x3 ) - ( 13.3396 * x1 ) ) * ( ( -9.05838 * x4 ) + ( 102.807 * x1 ) ) ) / x3 ) ) + ( 88.4397 * x1 ) ) ) ) ) ) ) / x1 ) ) )')
-
-  result=eq.subs('x0',config[0]).subs('x1',config[1]).subs('x2',config[2]).subs('x3',config[3]).subs('x4',config[4]).subs('x5',config[5]).subs('x6',config[6]).subs('x7',config[7]).subs('x8',config[8])
-
-  return result
-
 if __name__=='__main__':
   configList=[]
   perfYield=[]
 
-  output=file('yieldEverything.txt','w')
+  output=file('peratoCS.csv','w')
   
-  '''
-  #Parse configuration sata
-  configDataFile=file('configPoster.txt','r')
-  for line in configDataFile:
-    configList.append(line.rstrip().split(' '))
-  configDataFile.close()
-  '''
-
   configList=generateConfigurations()
-
 
   for i,config in enumerate(configList):
     config = map(int, config)
-    '''
-    dataPoint=[getPerformance(config), getDieYield(config)]
-    output.write(str(dataPoint[0])+' '+str(dataPoint[1])+';'+'\n')
-    perfYield.append(dataPoint)
-    '''
-    if(i<int(len(configList)/4)):
-      dieOut=getDieAreaYieldCost(config)
-      perfOut=getAvgPerf(config)
+    dieOut=getDieAreaYieldCost(config)
+    perfOut=getAvgPerf(config)
 
-      dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-      perfYield.append(dataOut)
-
-    '''
-    change=[0,0,0]
-    if(i%4==0):
-      base=dieOut
-    else:
-      for j in range(len(base)):
-        change[j]=(dieOut[j]-base[j])/base[j]
-
-      temp=' '.join(str(n) for n in config)
-      output.write('"'+temp+'"'+','+str(change[0])+','+str(change[1])+','+str(change[2])+',,')
-      if(i%4==3):
-        output.write('\n')
-    '''
-
+    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
+    perfYield.append(dataOut)
   
   perfYield=sorted(perfYield, key=operator.itemgetter(3))
   perfList=[]
@@ -207,7 +178,6 @@ if __name__=='__main__':
 
   peratoOptimalAll=[]
   for config in peratoOptimalBase:
-    config[6:]=[0,0,0]
     dieOut=getDieAreaYieldCost(config)
     perfOut=getAvgPerf(config)
 
@@ -216,40 +186,6 @@ if __name__=='__main__':
 
     temp=' '.join(str(n) for n in config)
     output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-  for config in peratoOptimalBase:
-    config[6:]=[1,0,0]
-    dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
-
-    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-  for config in peratoOptimalBase:
-    config[6:]=[0,1,0]
-    dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
-
-    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-  for config in peratoOptimalBase:
-    config[6:]=[0,0,1]
-    dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
-
-    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
 
 
   output.close()

@@ -16,7 +16,7 @@ print 'There are ' + str(len(dataList)) + ' output files.'
 dataList.sort()
 dataList.remove('log')
 
-fAverage=open('./AverageTotalParsed.txt','r')
+fAverage=open('./700.dat','r')
 fMeanPer=open('./SensTestResults.txt','w')
 AverageList=fAverage.readlines()
 fAverage.close()

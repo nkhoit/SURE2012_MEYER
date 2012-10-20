@@ -138,6 +138,19 @@ def getDieAreaYieldCost(config):
  
   return [areaList[8],dieYield,dieCost]
 
+def getShortestPerf(config):
+  eq = sympy.sympify('( -109.357 + ( -25.6347 * ( ( ( 92.1859 * x6 ) - ( ( ( ( -2.20927 * ( ( ( -201.968 * x5 ) - ( -92.6793 * x2 ) ) / x0 ) ) - ( 4.4781 * x8 ) ) - ( ( 21.4946 * x6 ) - ( ( 143.526 * x4 ) - ( ( ( 49.0981 * x6 ) - ( ( ( ( 5.18815 * ( ( ( 56.7044 * x1 ) - ( ( ( ( 62.0626 * x8 ) - ( 86.2029 * ( ( ( -19.5875 * x5 ) - ( -38.1151 * x2 ) ) / x0 ) ) ) - ( -196.047 * x0 ) ) - ( 51.5922 * x1 ) ) ) / ( ( 1.48716 * x3 ) - ( ( ( 42.1913 * x5 ) - ( 182.373 * x0 ) ) + ( ( ( ( 21.947 * x1 ) - ( -3.04785 * x4 ) ) - ( 97.5962 * ( ( ( 63.9273 * x6 ) - ( ( ( ( 149.521 * ( x0 / x5 ) ) - ( -0.892625 * x4 ) ) - ( 90.0825 * x0 ) ) - ( 0.0228199 * x1 ) ) ) / x0 ) ) ) - ( ( -99.8903 * ( ( ( 50.8458 * x5 ) - ( 29.9984 * x2 ) ) / x2 ) ) - ( 30.829 * x8 ) ) ) ) ) ) ) - ( 18.0301 * x4 ) ) - ( -15.959 * x4 ) ) - ( ( ( 13.1012 * x0 ) ^ ( 67.3139 * x8 ) ) - ( -9.95186 * x1 ) ) ) ) )^2 ) ) ) - ( ( ( -62.336 * x4 ) - ( ( ( 13.9078 * x6 ) - ( ( ( ( -3.64022 * ( ( ( 54.125 * x1 ) - ( ( -0.595084 * ( ( ( ( ( ( -48.0878 * x0 ) + ( ( 12.2064 * x4 ) ^ ( 78.9419 * x6 ) ) ) - ( 66.5776 * x4 ) ) - ( 61.323 * x6 ) ) - ( ( 61.2714 * x4 ) - ( 132.18 * x1 ) ) ) / x0 ) ) - ( -111.526 * x4 ) ) ) / ( ( 1.59766 * x3 ) - ( ( ( 99.357 * x5 ) - ( 72.0521 * x0 ) ) + ( ( ( ( ( 63.1587 * x0 ) + ( 63.6443 * x6 ) ) - ( 173.707 * x4 ) ) - ( 42.5172 * ( ( ( 54.1886 * x6 ) - ( ( ( ( 14.0581 * ( x8 / x5 ) ) - ( 0.338817 * x4 ) ) - ( 43.6322 * x0 ) ) - ( -0.120073 * x1 ) ) ) / x0 ) ) ) - ( ( 44.9849 * ( ( ( 34.5196 * x5 ) - ( 90.0463 * x2 ) ) / x2 ) ) - ( 91.7651 * x8 ) ) ) ) ) ) ) - ( -0.0514545 * x2 ) ) - ( 0.111878 * x4 ) ) - ( ( ( 24.3609 * x2 ) ^ ( 5.65791 * x8 ) ) - ( -391.707 * x1 ) ) ) ) )^2 ) + ( 61.9605 * x2 ) ) ) ) / ( ( 189.507 * x1 ) )^2 ) ) )')
+  result=eq.subs('x0',config[0]).subs('x1',config[1]).subs('x2',config[2]).subs('x3',config[3]).subs('x4',config[4]).subs('x5',config[5]).subs('x6',config[6]).subs('x7',config[7]).subs('x8',config[8])
+
+  return result
+
+def getFilterPerf(config):
+  eq = sympy.sympify('( 11.4533 + ( 4.05504e-05 * ( ( 41.6425 * x6 ) - ( ( ( ( ( 77.2051 * ( ( ( 66.4692 * ( ( x0 / x5 ) / ( ( 93.6097 * x0 ) )^2 ) ) - ( 98.6404 * x1 ) ) / ( ( 33.9483 * x4 ) )^2 ) ) + ( ( 51.4472 * x0 ) - ( ( 61.0716 * x8 ) )^2 ) ) ^ ( ( 93.3366 * x8 ) )^2 ) - ( ( ( ( 91.952 * ( x4 / ( ( ( ( ( ( ( ( ( ( 91.6766 * ( x4 * x1 ) ) ^ ( ( ( 88.5781 * ( ( ( ( ( 98.459 * ( x4 / x1 ) ) + ( 48.3747 * x6 ) ) )^2 )^2 / x1 ) ) + ( 92.7024 * x6 ) ) )^2 ) - ( 63.1303 * x8 ) ) ^ ( 84.0547 * x6 ) ) )^2 )^2 ^ ( ( ( ( 77.9855 * ( x4 / ( ( ( 27.7776 * ( x4 / x1 ) ) + ( 59.3983 * x6 ) ) - ( ( ( ( 64.9167 * ( x6 * ( ( ( ( ( 27.9308 * x0 ) + ( 92.5521 * x5 ) ) + ( ( ( ( ( ( ( ( 18.8497 * x3 ) )^2 )^2 ^ ( ( 69.1804 * x8 ) )^2 ) - ( ( ( 25.9681 * ( x4 / x1 ) ) + ( 62.981 * x6 ) ) )^2 ) - ( ( 8.0289 * x4 ) - ( 21.0501 * x0 ) ) ) - ( ( ( 85.2687 * x5 ) )^2 ^ ( ( 89.2557 * x8 ) )^2 ) ) )^2 ) )^2 * ( ( x0 / x5 ) / ( ( 61.6926 * x6 ) - ( ( ( ( ( 61.4738 * x0 ) - ( ( ( 54.7249 * x0 ) )^2 )^2 ) - ( 54.3023 * ( ( ( 59.1142 * x0 ) )^2 / x1 ) ) ) + ( 87.6732 * x5 ) ) - ( 4.74943 * x5 ) ) ) ) ) ) ) - ( 19.1858 * x0 ) ) )^2 + ( 80.0098 * x3 ) ) ) ) ) + ( 93.3095 * x6 ) ) - ( ( ( 9.86236 * x8 ) )^2 )^2 ) - ( 67.5879 * x1 ) ) ) - ( ( ( -6.91845 * ( x4 / x1 ) ) + ( ( 39.6405 * x0 ) - ( ( 59.2903 * x8 ) )^2 ) ) )^2 ) - ( ( 15.6634 * x1 ) - ( 185.906 * x0 ) ) ) - ( ( ( 36.2758 * x6 ) )^2 ^ ( ( ( 79.6764 * x8 ) )^2 )^2 ) ) ) ) + ( 98.69 * x6 ) ) + ( 100.193 * x6 ) ) )^2 ) - ( ( ( ( ( 90.334 * ( ( x0 / x5 ) / ( ( -0.244298 * x0 ) )^2 ) ) - ( 48.3277 * x1 ) ) - ( ( ( ( ( ( ( ( 74.7876 * ( x4 / x1 ) ) + ( 15.2101 * x6 ) ) )^2 )^2 ^ ( ( 80.0232 * x8 ) )^2 ) - ( ( 8.19679 * ( x4 / x1 ) ) )^2 ) - ( ( 35.2602 * x6 ) - ( ( ( ( ( 160.795 * ( x4 / x1 ) ) + ( 70.0722 * x7 ) ) - ( ( ( 95.9528 * x8 ) )^2 )^2 ) - ( -5.51979 * x1 ) ) - ( ( -6.48835 * x1 ) - ( -4.20551 * x5 ) ) ) ) ) - ( ( ( 82.8799 * x5 ) )^2 ^ ( ( 10.4704 * x8 ) )^2 ) ) ) - ( ( ( ( 53.0045 * x4 ) )^2 ^ ( ( ( 1.06568 * x8 ) )^2 )^2 ) - ( 59.1946 * x1 ) ) ) - ( ( ( ( ( ( ( 45.314 * x5 ) ^ ( ( 9.92804 * x8 ) )^2 ) - ( ( ( 0.824633 * ( x4 / x1 ) ) + ( 35.0825 * x6 ) ) )^2 ) - ( 0.0493153 * x1 ) ) - ( 14.3583 * x7 ) ) )^2 + ( 68.8789 * x3 ) ) ) ) ) ) )')
+
+  result=eq.subs('x0',config[0]).subs('x1',config[1]).subs('x2',config[2]).subs('x3',config[3]).subs('x4',config[4]).subs('x5',config[5]).subs('x6',config[6]).subs('x7',config[7]).subs('x8',config[8])
+
+  return result
+
 def getAvgPerf(config):
 
   eq = sympy.sympify('( 11.5417 + ( 0.00508481 * ( ( ( ( ( ( ( 6.77246 * x2 ) - ( ( ( ( ( 44.8533 * x0 ) + ( 36.9014 * x5 ) ) - ( ( 80.7387 * x1 ) + ( 107.142 * ( ( ( ( ( -131.701 * x4 ) + ( 1.42475 * x1 ) ) / x4 ) / ( ( ( 3.01692 * x0 ) + ( 3.22937 * x4 ) ) + ( 0.00137602 * x3 ) ) ) * ( ( ( 25.0434 * x1 ) - ( ( ( -6.01733 * x4 ) + ( ( ( -108.891 * x0 ) + ( 2.42072 * x5 ) ) + ( 28.8689 * x1 ) ) ) - ( ( 126.135 * x4 ) + ( 0.0688717 * x3 ) ) ) ) / ( ( 101.054 * x0 ) + ( 0.0860422 * x4 ) ) ) ) ) ) ) - ( 50.581 * x1 ) ) + ( 192.039 * x4 ) ) ) - ( 4.87047 * x6 ) ) + ( 64.5344 * ( ( x1 / ( ( 50.1788 * x4 ) + ( ( ( 5.29947 * x0 ) + ( 0.586408 * x5 ) ) + ( 104.23 * x1 ) ) ) ) * ( ( -54.5872 * ( x1 / ( x3 / x0 ) ) ) + ( 73.8578 * x1 ) ) ) ) ) - ( -4.66654 * x6 ) ) + ( 79.3636 * ( ( x1 / ( ( 0.593013 * x4 ) + ( 125.153 * x1 ) ) ) * ( ( 2.2734 * ( x3 / x0 ) ) + ( ( ( 73.9176 * x0 ) + ( 59.3446 * x5 ) ) - ( ( 0.274337 * ( ( ( ( 125.534 * x3 ) - ( 13.3396 * x1 ) ) * ( ( -9.05838 * x4 ) + ( 102.807 * x1 ) ) ) / x3 ) ) + ( 88.4397 * x1 ) ) ) ) ) ) ) / x1 ) ) )')
@@ -150,106 +163,18 @@ if __name__=='__main__':
   configList=[]
   perfYield=[]
 
-  output=file('yieldEverything.txt','w')
+  output=file('shortestBase.txt','w')
   
-  '''
-  #Parse configuration sata
-  configDataFile=file('configPoster.txt','r')
-  for line in configDataFile:
-    configList.append(line.rstrip().split(' '))
-  configDataFile.close()
-  '''
-
   configList=generateConfigurations()
-
 
   for i,config in enumerate(configList):
     config = map(int, config)
-    '''
-    dataPoint=[getPerformance(config), getDieYield(config)]
-    output.write(str(dataPoint[0])+' '+str(dataPoint[1])+';'+'\n')
-    perfYield.append(dataPoint)
-    '''
-    if(i<int(len(configList)/4)):
-      dieOut=getDieAreaYieldCost(config)
-      perfOut=getAvgPerf(config)
-
-      dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-      perfYield.append(dataOut)
-
-    '''
-    change=[0,0,0]
-    if(i%4==0):
-      base=dieOut
-    else:
-      for j in range(len(base)):
-        change[j]=(dieOut[j]-base[j])/base[j]
-
-      temp=' '.join(str(n) for n in config)
-      output.write('"'+temp+'"'+','+str(change[0])+','+str(change[1])+','+str(change[2])+',,')
-      if(i%4==3):
-        output.write('\n')
-    '''
-
-  
-  perfYield=sorted(perfYield, key=operator.itemgetter(3))
-  perfList=[]
-  peratoOptimalBase=[]
-  index=0
-  for line in perfYield:
-    perfList.append(line[4])
-
-  while(index<len(perfYield)):
-    index=perfList.index(max(perfList[index:]))
-    peratoOptimalBase.append(perfYield[index][0])
-    #output.write(str(perfYield[index])+'\n')
-    index=index+1
-
-  peratoOptimalAll=[]
-  for config in peratoOptimalBase:
-    config[6:]=[0,0,0]
     dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
+    perfOut=getShortestPerf(config)
 
     dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-  for config in peratoOptimalBase:
-    config[6:]=[1,0,0]
-    dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
-
-    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-  for config in peratoOptimalBase:
-    config[6:]=[0,1,0]
-    dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
-
-    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
-  for config in peratoOptimalBase:
-    config[6:]=[0,0,1]
-    dieOut=getDieAreaYieldCost(config)
-    perfOut=getAvgPerf(config)
-
-    dataOut=[config,dieOut[0],dieOut[1],dieOut[2],perfOut]
-    peratoOptimalAll.append(dataOut)
-
-    temp=' '.join(str(n) for n in config)
-    output.write('"'+temp+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
-
+    output.write('"'+' '.join(str(n) for n in config)+'"'+','+str(dieOut[0])+','+str(dieOut[1])+','+str(dieOut[2])+','+str(perfOut)+'\n')
+    perfYield.append(dataOut)
 
 
   output.close()
